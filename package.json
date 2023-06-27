@@ -1,0 +1,11 @@
+{
+  "name": "mono",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Azim-941223/mono.git",
+  "author": "Azim-941223 <urmanbetovazim@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
