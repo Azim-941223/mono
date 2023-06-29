@@ -14,8 +14,7 @@ const App:React.FC = () => {
       <h1>{t("App.title")}</h1>
       <button onClick={() => changeLanguage("en")}>EN</button>
       <button onClick={() => changeLanguage("ru")}>RU</button>
-    </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
