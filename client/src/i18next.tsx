@@ -11,10 +11,11 @@ i18n
     fallbackLng: "en",
     debug: true,
     detection: {
-      order: ["localStorage", "cookie"]
+      order: ["localStorage", "cookie"],
+      caches: ["coocies"]
     },
-    interpolation: {
-      escapeValue: false
+    backend:{
+        loadPath: "/shared/locales/{{lng}}/{{ns}}.json"
     }
   });
 

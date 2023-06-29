@@ -5,7 +5,7 @@ import "./i18next"
 
 
 const App:React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation(["maigitn"]);
   const changeLanguage = (language: string) => {
     i18n.changeLanguage(language);
   }
