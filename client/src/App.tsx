@@ -5,6 +5,10 @@ import { Route, Routes } from "react-router-dom";
 import "./i18next";
 import Test from "./Test";
 const App: React.FC = () => {
+import "./i18next";
+
+
+const App:React.FC = () => {
   const { t, i18n } = useTranslation(["main"]);
   const changeLanguage = (language: string) => {
     i18n.changeLanguage(language);
