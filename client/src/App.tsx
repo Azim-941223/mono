@@ -2,7 +2,7 @@ import React from "react";
 import "./App.scss";
 import { useTranslation } from "react-i18next";
 import "./i18next";
-const App:React.FC = () => {
+const App: React.FC = () => {
   const { t, i18n } = useTranslation(["main"]);
   const changeLanguage = (language: string) => {
     i18n.changeLanguage(language);
