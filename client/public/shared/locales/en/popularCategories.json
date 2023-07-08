@@ -1,0 +1,17 @@
+{
+  "title": "Popular Categories",
+  "sofas": "sofas",
+  "tables": "tables",
+  "wardrobes": "wardrobes",
+  "kitchen-set": "Kitchen Set",
+  "beds": "beds",
+  "chairs": "chairs",
+  "news": {
+    "summer-title": "Summer Update",
+    "summer-description": "Get sunny discounts up to 30% on summer furniture collections to create a fresh and stylish summer interior. A great opportunity to get quality items at attractive prices.",
+    "more": "More",
+    "home-oasis-title": "Home Oasis",
+    "home-oasis-description": "Furniture to create a home corner",
+    "go-to-collection": "Go to collection"
+  }
+}
