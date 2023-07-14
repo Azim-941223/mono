@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+.header{
+    width: 1440px;
+    height: 65px;
+    background-color: rgb(229,229,229);
+    &-nav{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 5px;
+    }
+    &__lists{
+        display: flex;
+    align-items: center;
+    column-gap: 18px;
+    }
+    &__logo{
+        padding-right: 40px;
+    }
+    &__right{
+        display: flex;
+        column-gap: 15px;
+    }
+}
+
+
+.container{
+    width: 100%;
+    max-width: 940px;
+    padding-top: 15px ;
+    margin-left: 75px;
+}
+
+

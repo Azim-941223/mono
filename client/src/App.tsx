@@ -5,6 +5,7 @@ import "./i18next";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Footer from "./components/Footer/Footer";
+import Headers from "./header/Headers";
 
 const App: React.FC = () => {
   const { i18n } = useTranslation(["main"]);
@@ -14,13 +15,17 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
+    
+
       <button onClick={() => changeLanguage("en")}>EN</button>
       <button onClick={() => changeLanguage("ru")}>RU</button>
-
+      <Headers/>
+    
       <Routes>
         <Route path="/" element={<HomePage />} />
       </Routes>
 
+  
       <Footer />
     </div>
   );
