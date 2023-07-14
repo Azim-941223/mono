@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import "./i18next";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
+import Footer from "./components/Footer/Footer";
 
 const App: React.FC = () => {
   const { i18n } = useTranslation(["main"]);
@@ -19,6 +20,8 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
       </Routes>
+
+      <Footer />
     </div>
   );
 };

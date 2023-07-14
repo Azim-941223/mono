@@ -80,7 +80,7 @@ function NewProductsSlider() {
                 </div>
 
                 <div className={css["card__colors"]}>
-                  {colors.map((elem2, index2, arr) => (
+                  {colors.map((elem2, index2) => (
                     <button
                       key={index2}
                       className={clsx({
