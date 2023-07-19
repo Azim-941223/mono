@@ -1,0 +1,12 @@
+{
+    "title":"Mono",
+    "list":{
+    "main": "Main",
+    "catalog": "Catalog",
+    "about": "About",
+    "contacts":"Contacts",
+    "payment": "Payment"
+    },
+
+    "enter": "Enter"
+    }
