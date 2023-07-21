@@ -1,0 +1,13 @@
+{
+  "title": "Questions left?",
+  "form": {
+    "title": "Leave your contact details \n and our manager will contact you",
+    "email": "Enter email",
+    "phone": "Phone number",
+    "button": "Send an application"
+  },
+  "form-modal": {
+    "title": "Application successfully accepted",
+    "text": "We will contact you during the day"
+  }
+}
