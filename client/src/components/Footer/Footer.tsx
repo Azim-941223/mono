@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import {
   footerNumber,
   footerSocials,
@@ -13,9 +14,9 @@ function Footer() {
   const { t } = useTranslation("Footer");
 
   const renderNavLinks = footerStore.map((elem, index) => (
-    <a key={index} href="#">
+    <Link key={index} to={elem}>
       {t("store."+elem)}
-    </a>
+    </Link>
   ));
 
   const renderDelivery = footerDelivery.map((elem, index) => (

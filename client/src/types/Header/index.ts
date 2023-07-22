@@ -1,0 +1,9 @@
+export interface navLink {
+  name: string,
+  to: string
+}
+
+export interface functional {
+  src: string,
+  alt: string
+}
