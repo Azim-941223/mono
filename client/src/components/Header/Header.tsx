@@ -1,4 +1,3 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
@@ -8,50 +7,81 @@ import searchIcon from "../../assets/icons/ic_search.svg";
 import cartIcon from "../../assets/icons/ic_cart.svg";
 import heartIcon from "../../assets/icons/ic_heart.svg";
 import personIcon from "../../assets/icons/ic_person.svg";
-
-import { functional } from "../../types/Header";
+import { functional, selectOption } from "../../types/Header";
 import { navLink } from "../../types/Header/index";
+import { useEffect, useRef, useState } from "react";
+import clsx from "clsx";
 
-function Header() {
-  const { t } = useTranslation("Header");
+const navLinks: navLink[] = [
+  {
+    name: "home",
+    to: "/",
+  },
+  {
+    name: "catalog",
+    to: "/catalog",
+  },
+  {
+    name: "about-us",
+    to: "/about-us",
+  },
+  {
+    name: "contact",
+    to: "/contact",
+  },
+  {
+    name: "payment",
+    to: "/payment",
+  },
+];
 
-  const navLinks: navLink[] = [
-    {
-      name: "home",
-      to: "/",
-    },
-    {
-      name: "catalog",
-      to: "/catalog",
-    },
-    {
-      name: "about-us",
-      to: "/about-us",
-    },
-    {
-      name: "contact",
-      to: "/contact",
-    },
-    {
-      name: "payment",
-      to: "/payment",
-    },
-  ];
+const userFunctional: functional[] = [
+  {
+    src: searchIcon,
+    alt: "search",
+  },
+  {
+    src: cartIcon,
+    alt: "cart",
+  },
+  {
+    src: heartIcon,
+    alt: "favorite",
+  },
+];
 
-  const userFunctional: functional[] = [
-    {
-      src: searchIcon,
-      alt: "search",
-    },
-    {
-      src: cartIcon,
-      alt: "cart",
-    },
-    {
-      src: heartIcon,
-      alt: "favorite",
-    },
-  ];
+const selectOptions: selectOption[] = [
+  {
+    lang: "en",
+    text: "English",
+  },
+  {
+    lang: "ru",
+    text: "Russian",
+  },
+];
+
+const Header: React.FC = () => {
+  const { t, i18n } = useTranslation("Header");
+  const changeLanguage = (language: string) => {
+    i18n.changeLanguage(language);
+    setLang(language);
+  };
+
+  const selectRef = useRef<HTMLDivElement>(null);
+  const [lang, setLang] = useState<string>("en");
+  const [isSelect, setIsSelect] = useState<boolean>(false);
+  const handleOutsideClick = (e: MouseEvent) => {
+    if (!selectRef.current?.contains(e.target as HTMLElement)) {
+      setIsSelect(false);
+      document.removeEventListener("click", handleOutsideClick);
+    }
+  };
+  useEffect(() => {
+    if (isSelect) {
+      document.addEventListener("click", handleOutsideClick);
+    }
+  }, [isSelect]);
 
   return (
     <header className={css.Header}>
@@ -78,10 +108,38 @@ function Header() {
             <img src={personIcon} alt="person" />
             <p>{t("sign-up")}</p>
           </Button>
+          <div
+            ref={selectRef}
+            className={clsx({
+              [css["select"]]: true,
+              [css["select--active"]]: isSelect,
+            })}
+            onClick={() => {
+              setIsSelect(!isSelect);
+              document.removeEventListener("click", handleOutsideClick);
+            }}
+          >
+            <span>{lang}</span>
+            <ul className={css["select__menu"]}>
+              {selectOptions.map((elem, index) => (
+                <li
+                  key={index}
+                  onClick={() => {
+                    changeLanguage(elem.lang);
+                  }}
+                  className={clsx({
+                    [css["disabled"]]: lang === elem.lang,
+                  })}
+                >
+                  ({elem.lang}) {elem.text}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </header>
   );
-}
+};
 
 export default Header;
