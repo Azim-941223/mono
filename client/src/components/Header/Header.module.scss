@@ -111,6 +111,105 @@
         border: none;
         background-color: white;
       }
+
+      .select {
+        margin-left: 5px;
+        padding: 5px 10px;
+
+        @include items-center();
+        flex-direction: column;
+
+        background-color: rgba(120, 120, 120, 1);
+
+        position: relative;
+
+        color: white;
+        
+        user-select: none;
+        cursor: pointer;
+
+        &.select--active{
+          &::after{
+            transform: rotate(180deg);
+          }
+
+          .select__menu{
+            display: flex;
+          }
+        }
+        
+        &::after{
+          content: "";
+          width: 11px;
+          height: 11px;
+
+          background-image: url("../../assets/icons/ic_arrowhead-white.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: 10px;
+
+          position: absolute;
+          top: calc(50% - 5px);
+          right: 8px;
+        }
+
+        span{
+          margin-right: 15px;
+
+          font-size: 16px;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+
+        .select__menu{
+          display: none;
+          flex-direction: column;
+
+          position: absolute;
+          top: calc(100% + 15px);
+
+          color: black;
+          list-style: none;
+          white-space: nowrap;
+
+          &::before{
+            content: "";
+            width: 18px;
+            height: 18px;
+
+            background-color: white;
+
+            position: absolute;
+            top: -7px;
+            left: calc(50% - 9px);
+            z-index: 0;
+
+            transform: rotate(45deg);
+          }
+
+          li{
+            padding: 10px 15px;
+
+            background-color: white;
+
+            position: relative;
+            z-index: 1;
+
+            font-size: 14px;
+
+            &.disabled{
+              background-color: rgb(204, 204, 204)!important;
+              color: rgb(124, 124, 124);
+              cursor: default;
+              pointer-events: none;
+            }
+
+            &:hover{
+              background-color: rgb(221, 221, 221);
+            }
+          }
+        }
+      }
     }
   }
 }
