@@ -1,0 +1,22 @@
+{
+  "description": "Mono is a company specializing in the sale of high quality furniture. Where you can independently arrange furniture in various interior styles.",
+  "store": {
+    "title": "Store",
+    "about-us": "About Us",
+    "licenses": "Licenses",
+    "catalog": "Catalog"
+  },
+  "delivery": {
+    "title": "Delivery",
+    "mon": "Mon",
+    "tue": "Tue",
+    "wed": "Wed",
+    "thu": "Thu",
+    "fri": "Fri",
+    "sat": "Sat",
+    "sun": "Sun"
+  },
+  "contacts": {
+    "title": "Contacts"
+  }
+}
