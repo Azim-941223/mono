@@ -1,5 +1,12 @@
 {
     "App":{
         "title":"App"
-    }
+    },
+    "main":{
+        "title": "Stylish furniture for \n your home",
+        "paragraph": "Mono is a company specializing in the sale \n of high-quality furniture. Where you can independently \n arrange furniture in various interior styles.",
+        "catalog": "To the catalog",
+        "application": "Submit your application"
+    },
+    "slide_title": "Stylish furniture for \n your home"
 }
