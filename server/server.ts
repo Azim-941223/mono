@@ -3,6 +3,14 @@ dotenv.config();
 import express, { Express, Request, Response } from "express";
 import cors from "cors";
 import mongoose from "mongoose";
+import jwt from "jsonwebtoken";
+import bcrypt from "bcrypt";
+import { validationResult } from "express-validator";
+
+import { registerValidation } from "./validations/auth";
+import checkAuth from "./utils/checkAuth";
+import { RequestType } from "./types/express";
+import * as UserController from "./controllers/UserController";
 
 mongoose
   .connect(
@@ -16,9 +24,11 @@ const app: Express = express();
 app.use(express.json());
 app.use(cors());
 
-app.get("/", (req: Request, res: Response) => {
-  res.send("Hello World!");
-});
+app.post("/auth/login", UserController.login);
+
+app.post("/auth/register", registerValidation, UserController.register);
+
+app.get("/auth/me", checkAuth, UserController.getMe);
 
 app.listen(process.env.PORT, () => {
   console.log(`liste port ${process.env.PORT}`);
