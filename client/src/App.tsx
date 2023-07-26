@@ -1,7 +1,11 @@
 import React from "react";
 import "./App.scss";
-import { useTranslation } from "react-i18next";
 import "./i18next";
+import SliderComponent from "./components/slider/SliderComponent";
+const App: React.FC = () => {
+  return (
+    <div className="App">
+      <SliderComponent />
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Footer from "./components/Footer/Footer";
