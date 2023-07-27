@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import Catalog from "./components/Catalog/Catalog";
 
 const App: React.FC = () => {
   const { i18n } = useTranslation(["main"]);
@@ -21,6 +22,7 @@ const App: React.FC = () => {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/catalog" element={<Catalog/>}/>
       </Routes>
 
       <Footer />
