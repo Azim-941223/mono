@@ -11,6 +11,8 @@ import { functional, selectOption } from "../../types/Header";
 import { navLink } from "../../types/Header/index";
 import { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
+import { useAppSelector } from "../../redux/hooks";
+import { selectIsAuth } from "../../redux/slices/authSlice";
 
 const navLinks: navLink[] = [
   {
@@ -32,6 +34,10 @@ const navLinks: navLink[] = [
   {
     name: "payment",
     to: "/payment",
+  },
+  {
+    name: "accommodation",
+    to: "/accommodation",
   },
 ];
 
@@ -62,6 +68,7 @@ const selectOptions: selectOption[] = [
 ];
 
 const Header: React.FC = () => {
+  const isAuth = useAppSelector(selectIsAuth);
   const { t, i18n } = useTranslation("Header");
   const changeLanguage = (language: string) => {
     i18n.changeLanguage(language);
@@ -88,13 +95,13 @@ const Header: React.FC = () => {
       <div className={`container ${css["Header__container"]}`}>
         <div className={css.left}>
           <h1>Mono</h1>
-          <div>
+          <nav>
             {navLinks.map((elem, index) => (
               <Link key={index} to={elem.to}>
                 {t(elem.name)}
               </Link>
             ))}
-          </div>
+          </nav>
         </div>
 
         <div className={css.right}>
@@ -104,10 +111,12 @@ const Header: React.FC = () => {
             </Button>
           ))}
           <hr />
-          <Button>
-            <img src={personIcon} alt="person" />
-            <p>{t("sign-up")}</p>
-          </Button>
+          <Link to="/authentication">
+            <Button>
+              <img src={personIcon} alt="person" />
+              <p>{t(isAuth ? "profile" : "sign-in")}</p>
+            </Button>
+          </Link>
           <div
             ref={selectRef}
             className={clsx({

@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import AuthPage from "./pages/AuthPage";
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/authentication" element={<AuthPage />} />
       </Routes>
 
       <Footer />
