@@ -1,9 +1,12 @@
+import { Suspense } from "react";
 import Verification from "../components/Verification/Verification";
 
 const AuthPage = () => {
   return (
     <main>
-      <Verification />
+      <Suspense fallback={""}>
+        <Verification />
+      </Suspense>
     </main>
   );
 };

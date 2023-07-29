@@ -1,0 +1,20 @@
+{
+  "title": "Welcome",
+  "login": "Login",
+  "register": "Registration",
+  "phone-number": "Phone number",
+  "name": "Name",
+  "password": "Password",
+  "or": "or",
+  "submit-login": "Login",
+  "submit-register": "Register",
+  "modal": {
+    "error": "Error",
+    "loginError": "Invalid phone number or password",
+    "registerError": "User already exists",
+    "phoneError": "Check if the phone number is correct",
+    "forgotError-title": "Forgot password?",
+    "forgotError": "Enter your phone number. In the near future you will receive a link to the specified email address forcreating a new password.",
+    "button": "Try again"
+  }
+}

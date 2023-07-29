@@ -21,6 +21,7 @@ export interface inputType {
   value: string;
   setValue: any;
   objKey: string;
+  minLength?: number;
 }
 
 export interface propTypes {

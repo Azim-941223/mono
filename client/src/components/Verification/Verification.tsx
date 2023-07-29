@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import clsx from "clsx";
 
 import css from "./Verification.module.scss";
 import personIcon from "../../assets/icons/ic_person_2.svg";
 import lockIcon from "../../assets/icons/ic_lock.svg";
 import phoneIcon from "../../assets/icons/ic_phone.svg";
+import hideIcon from "../../assets/icons/ic_hide.svg";
 import {
   formType,
   inputType,
@@ -18,6 +19,8 @@ import {
 } from "../../redux/slices/authSlice";
 import { Navigate } from "react-router-dom";
 import Modal from "./Modal";
+import { useTranslation } from "react-i18next";
+import { phoneInputFunc } from "../../utils/Verification";
 
 const variants = ["login", "register"];
 
@@ -34,6 +37,7 @@ const registerFormTemplate = {
 const Verification: React.FC = () => {
   const dispatch = useAppDispatch();
   const isAuth = useAppSelector(selectIsAuth);
+  const { t } = useTranslation("Verification");
 
   const [variant, setVariant] = useState<string>("login");
   const renderVariants = variants.map((elem: string, index) => (
@@ -44,7 +48,7 @@ const Verification: React.FC = () => {
       })}
       onClick={() => setVariant(elem)}
     >
-      {elem}
+      {t(elem)}
     </h2>
   ));
 
@@ -94,6 +98,7 @@ const Verification: React.FC = () => {
       value: registerInputsValue.name,
       setValue: setRegisterInputsValue,
       objKey: "name",
+      minLength: 2,
     },
     {
       aria: "password",
@@ -104,44 +109,66 @@ const Verification: React.FC = () => {
       value: registerInputsValue.password,
       setValue: setRegisterInputsValue,
       objKey: "password",
+      minLength: 5,
     },
   ];
-  const renderInputs = (array: inputType[]) =>
-    array.map((elem, index) => (
+  const renderInputs = (array: inputType[]) => {
+    const ref = useRef<HTMLInputElement[] | null[]>([]);
+
+    return array.map((elem, index) => (
       <label key={index} aria-label={elem.aria}>
         <img src={elem.src} alt={elem.alt} />
         <input
+          ref={(el) => (ref.current[index] = el)}
           type={elem.type}
-          placeholder={elem.placeholder}
+          placeholder={t(elem.placeholder)}
           value={elem.value}
           onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-            elem.setValue((state: formType) => ({
-              ...state,
-              [elem.objKey]:
-                elem.objKey === "phone"
-                  ? Number(e.target.value) ||
-                    e.target.value === "" ||
-                    e.target.value === "+"
-                    ? e.target.value.substring(0, 1) !== "+"
-                      ? "+" + e.target.value
-                      : e.target.value
-                    : state[elem.objKey]
-                  : e.target.value,
-            }))
+            phoneInputFunc(elem, e)
           }
+          minLength={elem.minLength ? elem.minLength : 0}
           required
         />
+        {elem.type === "password" ? (
+          <button
+            type="button"
+            onClick={() => {
+              switch (ref.current[index]?.type) {
+                case "password":
+                  console.log("text");
+                  ref.current[index]!.type = "text";
+                  break;
+
+                case "text":
+                  console.log("password");
+                  ref.current[index]!.type = "password";
+                  break;
+
+                default:
+                  break;
+              }
+            }}
+          >
+            <img src={hideIcon} alt="show/hide" />
+          </button>
+        ) : null}
       </label>
     ));
+  };
+  const renderLoginForm = renderInputs(loginInputs);
+  const renderRegisterForm = renderInputs(registerInputs);
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
     if (variant === "login") {
-      const userData = {
+      const userData: formType = {
         phone: loginInputsValue.phone,
         password: loginInputsValue.password,
       };
+      if (!userData.phone.length && !userData.password.length) {
+        return;
+      }
       dispatch(fetchLogin(userData))
         .unwrap()
         .then((res) => {
@@ -150,38 +177,48 @@ const Verification: React.FC = () => {
             return;
           }
           setLoginInputsValue(loginFormTemplate);
+          console.log("yes");
         })
         .catch((err) => {
           const status = err.message.replace(/[^0-9.]/g, "");
 
           if (!status) {
-            console.log(err.code);
             return;
           }
 
           if (status === "400") {
-            setModalVariant("error");
+            setModalVariant("loginError");
             setIsModalActive(true);
-            console.log("Неверное имя или пароль");
           }
         });
     } else {
-      const userData = {
+      const regex = new RegExp(/^\+(?:[0-9] ?){6,14}[0-9]$/);
+      const userData: registerFormType = {
         phone: registerInputsValue.phone,
         name: registerInputsValue.name,
         password: registerInputsValue.password,
       };
-      const res = dispatch(fetchRegister(userData)).then((data) => {
-        console.log(data);
-        if (data.meta.requestStatus === "rejected") {
-          return;
-        }
-        setRegisterInputsValue(registerFormTemplate);
-      });
+      if (!regex.test(userData.phone)) {
+        setModalVariant("phoneError");
+        setIsModalActive(true);
+        return;
+      }
+      dispatch(fetchRegister(userData))
+        .unwrap()
+        .then((res) => {
+          if (res.meta.requestStatus === "rejected") {
+            return;
+          }
+          setRegisterInputsValue(registerFormTemplate);
+        })
+        .catch((err) => {
+          setModalVariant("registerError");
+          setIsModalActive(true);
+        });
     }
   }
 
-  const [modalVariant, setModalVariant] = useState<string>("error");
+  const [modalVariant, setModalVariant] = useState<string>("loginError");
   const [isModalActive, setIsModalActive] = useState<boolean>(false);
   const [isModalHidden, setIsModalHidden] = useState<boolean>(true);
   useEffect(() => {
@@ -192,6 +229,11 @@ const Verification: React.FC = () => {
       }, transition);
     }
   }, [isModalActive]);
+  function handleForgotClick() {
+    setModalVariant("forgotError");
+    setIsModalActive(true);
+    setIsModalHidden(false);
+  }
 
   if (isAuth) {
     return <Navigate to="/" />;
@@ -200,17 +242,22 @@ const Verification: React.FC = () => {
   return (
     <article className={css.Verification}>
       <div className={css.container}>
-        <h1>Добро пожаловать</h1>
+        <h1>{t("title")}</h1>
 
         <nav>{renderVariants}</nav>
 
         <form className={css.form} onSubmit={handleSubmit}>
           <div>
             {variant === "login" ? (
-              <>{renderInputs(loginInputs)}</>
+              <>{renderLoginForm}</>
             ) : (
-              <>{renderInputs(registerInputs)}</>
+              <>{renderRegisterForm}</>
             )}
+            {variant === "login" ? (
+              <p className={css.forgotPassword} onClick={handleForgotClick}>
+                {t("modal.forgotError-title")}
+              </p>
+            ) : null}
           </div>
 
           <div className={css["form__buttons"]}>
@@ -219,10 +266,10 @@ const Verification: React.FC = () => {
               className={css.submit}
               onClick={() => setIsModalHidden(false)}
             >
-              Войти
+              {t("submit-login")}
             </button>
             <div>
-              <p>Или</p>
+              <p>{t("or")}</p>
               <hr />
             </div>
             <button type="button">Гугл</button>

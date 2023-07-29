@@ -10,13 +10,13 @@ i18n
   .init({
     fallbackLng: "en",
     debug: true,
-    detection: {
-      order: ["localStorage", "cookie"],
-      caches: ["coocies"]
+    // detection: {
+    //   order: ["localStorage", "cookie"],
+    //   caches: ["coocies"]
+    // },
+    backend: {
+      loadPath: "/shared/locales/{{lng}}/{{ns}}.json",
     },
-    backend:{
-        loadPath: "/shared/locales/{{lng}}/{{ns}}.json"
-    }
   });
 
 export default i18n;
