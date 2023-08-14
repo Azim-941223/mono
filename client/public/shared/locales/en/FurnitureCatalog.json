@@ -1,0 +1,55 @@
+{
+  "furniture_title": {
+    "hits": "Sales hits",
+    "mirrors": "Mirrors",
+    "sofas": "Sofas"
+  },
+  "vivo": {
+    "description": "Vivo armchair",
+    "price": "690 $"
+  },
+  "udine": {
+    "description": "Udine armchair",
+    "price": "16 200 $"
+  },
+  "rico": {
+    "description": "Rico sofa",
+    "price": "67 890 $"
+  },
+  "boston": {
+    "description": "Boston armchair",
+    "price": "23 770 $"
+  },
+  "angul": {
+    "description": "Angul mirror",
+    "price": "16 200 $"
+  },
+  "sillon": {
+    "description": "Sillon mirror",
+    "price": "22 000 $"
+  },
+  "adnet": {
+    "description": "Adnet mirror",
+    "price": "47 000 $"
+  },
+  "zaabali": {
+    "description": "Zaabali mirror",
+    "price": "2550 $"
+  },
+  "modular": {
+    "description": "Modular sofa",
+    "price": "2630 $"
+  },
+  "chill": {
+    "description": "Chill sofa",
+    "price": "43 680 $"
+  },
+  "shik": {
+    "description": "Shik sofa",
+    "price": "23 550 $"
+  },
+  "moss": {
+    "description": "Moss sofa",
+    "price": "26 030 $"
+  }
+}
