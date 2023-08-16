@@ -4,7 +4,7 @@ import Catalog from "../components/Catalog/Catalog";
 function HomePage() {
   return (
     <main>
-      <Catalog/>
+     <Catalog/>
     </main>
   );
 }

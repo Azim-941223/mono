@@ -1,21 +1,32 @@
 .catalog{
+  &_title{
+    width: 169px;
+    height: 45px;
+    font-weight: bold;
+  }
   &__container{
     width: 100%;
-  max-width: 1480px;
+  max-width: 1380px;
   margin: 0 auto;
   height: 350px;
   padding: 50px 0 0;
-  }
+
+}
   &__text{
     text-align: center;  
+    color: black;
+    transition: .5s;
+    &:hover{
+      transition: .5s;
+      color: darkgrey;
+      cursor: pointer;
+    } 
   }
   &__down{
     padding: 30px 0 0;
+
   }
-  &_line{
-    width: 150px;
-    margin-top: 30px;
-  }
+ 
 }
 
 .Catalog{
@@ -23,6 +34,8 @@
     flex-wrap: wrap; 
     gap: 45px;
     &__search{
+      padding-left: 44px;
+      padding-bottom: 25px;
       display: flex; 
       flex-wrap: wrap; 
       gap: 70px;
@@ -32,17 +45,13 @@
 .catalog2{
     display: flex; 
     flex-wrap: wrap; 
-    gap: 1px;
-}
-
-.image{
-  padding-left: 20px;
-
+    gap: 20px;
+    justify-content: center;
 }
 
 .form{
   width: 100%;
-  max-width: 450.66px;
+  max-width: 400.66px;
   height: 47px;
   position: relative;
 }
