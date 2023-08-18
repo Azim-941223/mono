@@ -1,5 +1,5 @@
-import React from 'react'
-import Catalog from '../Catalog/Catalog'
+import React from "react"
+import Catalog from "../Catalog/Catalog"
 
 function Childroom() {
   return (
@@ -7,7 +7,7 @@ function Childroom() {
       <Catalog/>
       <h1>Childroom</h1>
     </div>
-  )
+  );
 }
 
-export default Childroom
+export default Childroom;

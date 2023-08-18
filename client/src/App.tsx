@@ -8,7 +8,6 @@ import SliderComponent from "./components/slider/SliderComponent";
 //      <SliderComponent />
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import CatalogPage from "./pages/CatalogPage";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Accessoires from "./components/Accessoires/Accessoires";
@@ -22,6 +21,7 @@ import Lightning from "./components/Lightning/Lightning";
 import Outside from "./components/Outside/Outside";
 import Kitchen from "./components/Kitchen/Kitchen";
 import Technic from "./components/Technic/Technic";
+import Contacts from "./components/Contacts/Contacts";
 
 const App: React.FC = () => {
   return (
@@ -29,7 +29,8 @@ const App: React.FC = () => {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/catalog" element={<CatalogPage/>} />
+        <Route path="/catalog" element={<Catalog/>} />
+        <Route path="/contact" element={<Contacts/>} />
         <Route path="/accessoires" element={<Accessoires/>} />
         <Route path="/childroom" element={<Childroom/>} />
         <Route path="/furniture" element={<Furniture/>} />
@@ -40,16 +41,8 @@ const App: React.FC = () => {
         <Route path="/outside" element={<Outside/>}/>
         <Route path="/technic" element={<Technic/>}/>
         <Route path="/kitchen" element={<Kitchen/>}/>
-
-
-
-
-
-
-
-
+     
       </Routes>
-
       <Footer />
     </div>
   );

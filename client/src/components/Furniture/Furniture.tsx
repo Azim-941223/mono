@@ -1,5 +1,5 @@
-import React from 'react'
-import Catalog from '../Catalog/Catalog'
+import React from "react"
+import Catalog from "../Catalog/Catalog"
 
 function Furniture() {
   return (
@@ -10,4 +10,4 @@ function Furniture() {
   )
 }
 
-export default Furniture
+export default Furniture;

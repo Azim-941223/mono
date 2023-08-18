@@ -1,6 +1,5 @@
-import React from 'react'
-import { NavLink, useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 import css from "./Catalog.scss";
 import image1 from "../../assets/images/Catalog/frame1.png";
 import image2 from "../../assets/images/Catalog/frame2.png";
@@ -14,24 +13,16 @@ import image9 from "../../assets/images/Catalog/frame9.png";
 import image10 from "../../assets/images/Catalog/frame10.png";
 import { useTranslation } from "react-i18next";
 
-
-
 function Catalog() {
 //const navigate = useNavigate();
 //const navigateToPage=()=>{
 //  navigate('/accessoires')
 //}
-
-
-
     const { t } = useTranslation("Catalog");
-
   return (
     <div className="catalog__container">
         <div className="Catalog__search">
-
         <Link className="catalog_title" to={`/catalog`}> <h1>{t("title")}</h1></Link>
-
            <form className="form" action="">
             <input className="form__field" type="search" placeholder={t("search")}></input>
             <button className="button button_form" type="submit">
@@ -69,7 +60,6 @@ function Catalog() {
             <img  className="image" src={image5} alt="image" />
             <br/>
             <Link  className="catalog__text" to={`/offices`}>{t("office")}</Link>
-
             </div>
             <div className="catalog__cards">
             <img  className="image" src={image6} alt="image" />
@@ -96,19 +86,14 @@ function Catalog() {
             <br/>
             <Link  className="catalog__text" to={`/kitchen`}>{t("kitchen")}</Link>
             </div>
-
 <span className="catalog_line">
 <svg   width="1257" height="1" viewBox="0 0 1277 1" fill="none" xmlns="http://www.w3.org/2000/svg">
 <line x1="-4.37114e-08" y1="0.5" x2="1277" y2="0.499888" stroke="black"/>
 </svg>
 </span>
-          </div>
-         
+          </div>   
 </div>
-
-
-
     </div>
-  )
+  );
 }
-export default Catalog
+export default Catalog;
