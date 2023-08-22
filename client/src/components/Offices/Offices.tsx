@@ -6,6 +6,12 @@ function Offices() {
     <div>
         <Catalog/>
       <h1>Offices</h1>
+
+
+
+
+
+     
     </div>
   )
 }

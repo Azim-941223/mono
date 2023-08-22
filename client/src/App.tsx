@@ -19,7 +19,6 @@ import Offices from "./components/Offices/Offices";
 import Plumbing from "./components/Plumbing/Plumbing";
 import Lightning from "./components/Lightning/Lightning";
 import Outside from "./components/Outside/Outside";
-import Kitchen from "./components/Kitchen/Kitchen";
 import Technic from "./components/Technic/Technic";
 import Contacts from "./components/Contacts/Contacts";
 
@@ -40,8 +39,6 @@ const App: React.FC = () => {
         <Route path="/lightning" element={<Lightning/>}/>
         <Route path="/outside" element={<Outside/>}/>
         <Route path="/technic" element={<Technic/>}/>
-        <Route path="/kitchen" element={<Kitchen/>}/>
-     
       </Routes>
       <Footer />
     </div>
