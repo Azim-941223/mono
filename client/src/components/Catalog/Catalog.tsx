@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import css from "./Catalog.scss";
 import image1 from "../../assets/images/Catalog/frame1.png";
 import image2 from "../../assets/images/Catalog/frame2.png";
@@ -81,6 +81,6 @@ function Catalog() {
           </div>
 </div>
     </div>
-  )
+  );
 }
-export default Catalog
+export default Catalog;
