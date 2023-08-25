@@ -18,7 +18,8 @@ function Catalog() {
 //const navigateToPage=()=>{
 //  navigate('/accessoires')
 //}
-    const { t } = useTranslation("Catalog");
+const { t } = useTranslation("Catalog");
+
   return (
     <div className="catalog__container">
         <div className="Catalog__search">
@@ -94,6 +95,7 @@ function Catalog() {
           </div>   
 </div>
     </div>
+
   );
 }
 export default Catalog;

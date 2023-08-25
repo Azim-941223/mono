@@ -6,6 +6,7 @@ function Childroom() {
     <div>
       <Catalog/>
       <h1>Childroom</h1>
+      
     </div>
   );
 }

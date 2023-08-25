@@ -4,7 +4,8 @@ import Catalog from '../Catalog/Catalog'
 function Outside() {
   return (
     <div>
-      <Catalog/>
+            <Catalog/>
+
       <h1>Outside</h1>
     </div>
   )

@@ -12,7 +12,6 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Accessoires from "./components/Accessoires/Accessoires";
 import Childroom from "./components/Childroom/Childroom";
-import Catalog from "./components/Catalog/Catalog";
 import Furniture from "./components/Furniture/Furniture";
 import Sofas from "./components/Sofas/Sofas";
 import Offices from "./components/Offices/Offices";
@@ -21,6 +20,9 @@ import Lightning from "./components/Lightning/Lightning";
 import Outside from "./components/Outside/Outside";
 import Technic from "./components/Technic/Technic";
 import Contacts from "./components/Contacts/Contacts";
+import Catalog from "./components/Catalog/Catalog";
+import CatalogPage from "./pages/CatalogPage";
+import Kitchen from "./components/Kitchen/Kitchen";
 
 const App: React.FC = () => {
   return (
@@ -28,7 +30,8 @@ const App: React.FC = () => {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/catalog" element={<Catalog/>} />
+        <Route path="/catalogpage" element={<Catalog/>} />
+        <Route path="/catalog" element={<CatalogPage/>} />
         <Route path="/contact" element={<Contacts/>} />
         <Route path="/accessoires" element={<Accessoires/>} />
         <Route path="/childroom" element={<Childroom/>} />
@@ -39,7 +42,10 @@ const App: React.FC = () => {
         <Route path="/lightning" element={<Lightning/>}/>
         <Route path="/outside" element={<Outside/>}/>
         <Route path="/technic" element={<Technic/>}/>
+        <Route path="/kitchen" element={<Kitchen/>}/>
+
       </Routes>
+    
       <Footer />
     </div>
   );

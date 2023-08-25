@@ -17,7 +17,7 @@ const MenuProps = {
   PaperProps: {
     style: {
       maxHeight: ITEM_HEIGHT * 4.5 + ITEM_PADDING_TOP,
-      width: 250,
+      width: 250
     },
   },
 };
@@ -34,7 +34,6 @@ const names = [
 export default function MultipleSelectCheckmarks() {
     const { t } = useTranslation("AcessoiresFilter");
 
-
   const [categories, setPersonName] = React.useState<string[]>([]);
 
   const handleChange = (event: SelectChangeEvent<typeof categories>) => {
@@ -48,16 +47,16 @@ export default function MultipleSelectCheckmarks() {
   };
 
   return (
-    <div className={css.selectstyle}>
+    <div className="selectstyle">
       <FormControl sx={{ m: 1, width: 300 }}>
         <InputLabel id="demo-multiple-checkbox-label">Категории</InputLabel>
-        <Select  className={css.selectstyleblack}
+        <Select className={css.Select} 
           labelId="demo-multiple-checkbox-label"
           id="demo-multiple-checkbox"
           multiple
           value={categories}
           onChange={handleChange}
-          input={<OutlinedInput label="Категории"/>}
+          input={<OutlinedInput label={t("categor")}/>}
           renderValue={(selected) => selected.join(', ')}
           MenuProps={MenuProps}
         >

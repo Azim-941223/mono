@@ -1,14 +1,13 @@
 import React from 'react'
 import Catalog from '../Catalog/Catalog'
 
-function Plumbing() {
+function Kitchen() {
   return (
     <div>
-            <Catalog/>
-
-      <h1>Plumbing</h1>
+        <Catalog/>
+      <h1>Kitchen</h1>
     </div>
   )
 }
 
-export default Plumbing
+export default Kitchen

@@ -46,10 +46,10 @@ const names = [
   };
 
   return (
-    <div className={css.selectstyle}>
+    <div className="selectstyle">
       <FormControl sx={{ m: 1, width: 300 }}>
         <InputLabel id="demo-multiple-checkbox-label">Стиль</InputLabel>
-        <Select
+        <Select className={css.proba}
           labelId="demo-multiple-checkbox-label"
           id="demo-multiple-checkbox"
           multiple
