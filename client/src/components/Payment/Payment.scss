@@ -1,0 +1,24 @@
+.popup__form-top{
+    display: flex;
+    column-gap: 40px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    padding-left: 50px;
+}
+
+.popup__title{
+    cursor: pointer;
+    font-size: 15px;
+    color:#666666;
+    &_active{
+        font-weight: bold;
+        color: black;
+        text-decoration: underline 2px solid #9D8053;
+        text-underline-offset: 10px;
+    }
+}
+
+
+.popup__form{
+    max-height: 900px;
+}

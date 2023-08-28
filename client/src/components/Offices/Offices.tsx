@@ -5,14 +5,7 @@ function Offices() {
   return (
     <div>
             <Catalog/>
-
       <h1>Offices</h1>
-
-
-
-
-
-     
     </div>
   )
 }

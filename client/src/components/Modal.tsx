@@ -3,7 +3,6 @@ import css from "./Modal.scss";
 import mod from "../assets/images/Modal/Modal.png";
 import { useTranslation } from "react-i18next";
 export default function Modal(){
-
     const { t } = useTranslation("Modal");
     const [modal, setModal] = useState(false)
     const toggleModal = () =>{
@@ -58,6 +57,12 @@ export default function Modal(){
 
         </div>
         )}
+
+
+
+
+
+
         </>
     )
 }

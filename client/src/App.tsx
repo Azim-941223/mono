@@ -23,6 +23,7 @@ import Contacts from "./components/Contacts/Contacts";
 import Catalog from "./components/Catalog/Catalog";
 import CatalogPage from "./pages/CatalogPage";
 import Kitchen from "./components/Kitchen/Kitchen";
+import Payment from "./components/Payment/Payment";
 
 const App: React.FC = () => {
   return (
@@ -43,6 +44,7 @@ const App: React.FC = () => {
         <Route path="/outside" element={<Outside/>}/>
         <Route path="/technic" element={<Technic/>}/>
         <Route path="/kitchen" element={<Kitchen/>}/>
+        <Route path="/payment" element={<Payment/>}/>
 
       </Routes>
     
