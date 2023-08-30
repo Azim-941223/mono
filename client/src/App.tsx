@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import FurnitureCatalog from "./components/FurnitureCatalog/FurnitureCatalog";
 import InteriorItems from "./components/InteriorItems/InteriorItems";
+import Beds from "./components/Catalog/Beds/Beds";
 
 const App: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <Route path="/catalog" element={<CatalogPage/>} />
         <Route path="/furniture" element={<FurnitureCatalog />} />
         <Route path="/interior" element={<InteriorItems />} />
+        <Route path="/beds" element={<Beds />} />
       </Routes>
       <Footer />
     </div>

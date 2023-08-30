@@ -1,0 +1,26 @@
+{
+  "bunk_bed": {
+    "description": "Двухъярусная кровать"
+  },
+  "mickey": {
+    "description": "Кровать Mickey"
+  },
+  "teddy": {
+    "description": "Детская кровать Teddy"
+  },
+  "kitty": {
+    "description": "Детская кровать Kitty"
+  },
+  "miro": {
+    "description": "Полка Miro"
+  },
+  "fjord_nightstand": {
+    "description": "Тумба Fjord"
+  },
+  "boston": {
+    "description": "Кресло Boston"
+  },
+  "fjord_wardrobe": {
+    "description": "Шкаф Fjord"
+  }
+}
