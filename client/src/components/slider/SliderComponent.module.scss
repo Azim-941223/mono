@@ -1,14 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  scrollbar-width: none; /* Убираем ширину полосы */
+}
+/* Вы можете указать цвет полосы (это работает в браузерах, которые поддерживают scrollbar-color) */
+body::-webkit-scrollbar {
+  width: 0; /* ширина полосы прокрутки */
+}
 .slider {
+  background-image: url(./../../../public/images/main/main_bg1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
   .global {
-    background-color: lightgrey;
-    height: 100vh;
+    height: 92vh;
     width: 100%;
     display: flex;
     align-items: center;
     padding-left: 8%;
-    background-image: url(./../../../public/images/main/main_bg1.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
     .main {
       width: 89%;
       h1 {
@@ -44,8 +55,8 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        height: 40px;
-        width: 130px;
+        height: 50px;
+        width: 150px;
         margin-right: 2%;
       }
       .application {
@@ -57,8 +68,8 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        height: 40px;
-        width: 190px;
+        height: 50px;
+        width: 235px;
       }
     }
     .right_side {
@@ -80,7 +91,7 @@
         background-size: auto;
         background-position: center;
       }
-      .next_btn{
+      .next_btn {
         background-image: url(./../../../public/images/main/arrow_right.png);
       }
     }
@@ -131,7 +142,7 @@
         font-weight: 500;
         line-height: normal;
         height: 40px;
-        width: 130px;
+        width: 150px;
         margin-right: 2%;
       }
       .application {
@@ -144,7 +155,7 @@
         font-weight: 500;
         line-height: normal;
         height: 40px;
-        width: 190px;
+        width: 250px;
       }
     }
     .right_side {
@@ -166,7 +177,7 @@
         background-size: auto;
         background-position: center;
       }
-      .next_btn{
+      .next_btn {
         background-image: url(./../../../public/images/main/arrow_right.png);
       }
     }
@@ -217,7 +228,7 @@
         font-weight: 500;
         line-height: normal;
         height: 40px;
-        width: 130px;
+        width: 150px;
         margin-right: 2%;
       }
       .application {
@@ -230,7 +241,7 @@
         font-weight: 500;
         line-height: normal;
         height: 40px;
-        width: 190px;
+        width: 250px;
       }
     }
     .right_side {
@@ -252,7 +263,7 @@
         background-size: auto;
         background-position: center;
       }
-      .next_btn{
+      .next_btn {
         background-image: url(./../../../public/images/main/arrow_right.png);
       }
     }
