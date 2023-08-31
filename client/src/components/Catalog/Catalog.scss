@@ -5,12 +5,8 @@
     font-weight: bold;
   }
   &__container{
-    width: 100%;
-  max-width: 1380px;
-  margin: 0 auto;
   height: 350px;
-  padding: 50px 0 0;
-
+  padding-top: 50px;
 }
   &__text{
     text-align: center;  
@@ -23,10 +19,8 @@
     } 
   }
   &__down{
-    padding: 30px 0 0;
-
-  }
- 
+    padding-top: 30px;
+    }
 }
 
 .Catalog{
@@ -34,7 +28,6 @@
     flex-wrap: wrap; 
     gap: 45px;
     &__search{
-      padding-left: 44px;
       padding-bottom: 25px;
       display: flex; 
       flex-wrap: wrap; 
@@ -46,7 +39,6 @@
     display: flex; 
     flex-wrap: wrap; 
     gap: 20px;
-    justify-content: center;
 }
 
 .form{
