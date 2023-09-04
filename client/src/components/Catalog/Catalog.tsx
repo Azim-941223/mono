@@ -95,7 +95,6 @@ const { t } = useTranslation("Catalog");
           </div>   
 </div>
     </div>
-
   );
 }
 export default Catalog;

@@ -1,0 +1,26 @@
+{
+  "bunk_bed": {
+    "description": "Bunk bed"
+  },
+  "mickey": {
+    "description": "Mickey bed"
+  },
+  "teddy": {
+    "description": "Teddy baby bed"
+  },
+  "kitty": {
+    "description": "Kitty baby bed"
+  },
+  "miro": {
+    "description": "Miro shelf"
+  },
+  "fjord_nightstand": {
+    "description": "Fjord nightstand"
+  },
+  "boston": {
+    "description": "Boston armchair"
+  },
+  "fjord_wardrobe": {
+    "description": "Fjord wardrobe"
+  }
+}

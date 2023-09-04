@@ -1,0 +1,50 @@
+{
+  "angul": {
+    "description": "Angul mirror"
+  },
+  "sillon": {
+    "description": "Sillon SH5 mirror"
+  },
+  "adnet": {
+    "description": "Adnet mirror"
+  },
+  "fountain": {
+    "description": "Vase Fountain"
+  },
+  "echasse": {
+    "description": "Vase Echasse"
+  },
+  "flowerpot": {
+    "description": "Flower pot"
+  },
+  "ceramic": {
+    "description": "Ceramic vase SC68"
+  },
+  "round_flowerpot": {
+    "description": "Flower pot"
+  },
+  "trace": {
+    "description": "Trace watch"
+  },
+  "spindle": {
+    "description": "Spindle wall clock"
+  },
+  "aliot": {
+    "description": "Aliot mirror"
+  },
+  "flam": {
+    "description": "Flam mirror"
+  },
+  "melt_wall": {
+    "description": "Melt Wall watch"
+  },
+  "zaabali": {
+    "description": "Zaabali mirror"
+  },
+  "bad_kid": {
+    "description": "Bad Kid poster"
+  },
+  "oxrand": {
+    "description": "Oxrand poster"
+  }
+}

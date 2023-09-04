@@ -1,0 +1,50 @@
+{
+  "angul": {
+    "description": "Зеркало Angul"
+  },
+  "sillon": {
+    "description": "Зеркало Sillon SH5"
+  },
+  "adnet": {
+    "description": "Зеркало Adnet"
+  },
+  "fountain": {
+    "description": "Ваза Fountain"
+  },
+  "echasse": {
+    "description": "Ваза Echasse"
+  },
+  "flowerpot": {
+    "description": "Кашпо для цветов"
+  },
+  "ceramic": {
+    "description": "Ваза керамическая SC68"
+  },
+  "round_flowerpot": {
+    "description": "Горшок для цветов"
+  },
+  "trace": {
+    "description": "Часы Trace"
+  },
+  "spindle": {
+    "description": "Настенные часы Spindle"
+  },
+  "aliot": {
+    "description": "Зеркало Aliot"
+  },
+  "flam": {
+    "description": "Зеркало Flam"
+  },
+  "melt_wall": {
+    "description": "Часы Melt Wall"
+  },
+  "zaabali": {
+    "description": "Зеркало Zaabali"
+  },
+  "bad_kid": {
+    "description": "Постер Bad Kid"
+  },
+  "oxrand": {
+    "description": "Постер Oxrand"
+  }
+}

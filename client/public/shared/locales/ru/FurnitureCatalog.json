@@ -1,0 +1,55 @@
+{
+  "furniture_title": {
+    "hits": "Хиты продаж",
+    "mirrors": "Зеркала",
+    "sofas": "Диваны"
+  },
+  "vivo": {
+    "description": "Кресло Vivo",
+    "price": "690 $"
+  },
+  "udine": {
+    "description": "Кресло Udine",
+    "price": "16 200 $"
+  },
+  "rico": {
+    "description": "Диван Rico",
+    "price": "67 890 $"
+  },
+  "boston": {
+    "description": "Кресло Boston",
+    "price": "23 770 $"
+  },
+  "angul": {
+    "description": "Зеркало Angul",
+    "price": "16 200 $"
+  },
+  "sillon": {
+    "description": "Зеркало Sillon",
+    "price": "22 000 $"
+  },
+  "adnet": {
+    "description": "Зеркало Adnet",
+    "price": "47 000 $"
+  },
+  "zaabali": {
+    "description": "Зеркало Zaabali",
+    "price": "2550 $"
+  },
+  "modular": {
+    "description": "Модульный диван",
+    "price": "2630 $"
+  },
+  "chill": {
+    "description": "Диван ЧИЛЛ",
+    "price": "43 680 $"
+  },
+  "shik": {
+    "description": "Диван ШИК",
+    "price": "23 550 $"
+  },
+  "moss": {
+    "description": "Диван Moss",
+    "price": "26 030 $"
+  }
+}
