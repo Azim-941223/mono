@@ -1,0 +1,32 @@
+.point{
+    &__container{
+        width: 1200px;
+        height: 300px;
+        background-color: rgb(229,229,229);
+        text-align: start;
+    }
+    &__row{
+        display: flex;
+        gap: 70px
+    }
+    &__map{
+        border-radius: 30px;
+        border: none;
+        width: 900px;
+        height: 270px;
+    
+    }
+    &__list{
+        &-text{
+            font-family: "Montserrat", sans-serif;
+            font-size: 13px;
+            padding-top: 10px;
+        }
+        &-price{
+            padding-top: 15px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 15px;
+
+        }
+    }
+}
