@@ -1,0 +1,36 @@
+.payment{
+    &__row{
+        display: flex;
+        gap: 30px;
+        &-first{
+            margin-top: 20px;
+        }
+    }
+    &__catalog{
+        background-color: rgb(229,229,229);
+        text-align: start;
+        width: 1200px;
+        height: 500px;
+        padding-left: 20px;
+
+    }
+    &__title1{
+        font-size: 15px;
+        font-family: "Montserrat", sans-serif;
+    }
+    &__title2{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+    }
+    &__text{
+        padding-bottom: 25px;
+        padding-top: 14px;
+        font-family: "Montserrat", sans-serif;
+
+    }
+}
+
+
+

@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
-
 import css from "./ContactDetails.module.scss";
 import Button from "../Button/Button";
 import backgroundImage from "../../assets/images/ContactDetails/background.png";

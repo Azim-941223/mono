@@ -1,12 +1,14 @@
-import React from "react";
-import Catalog from "../components/Catalog/Catalog";
+import React from 'react'
+import Modal from '../components/Modal'
+import Catalog from '../components/Catalog/Catalog'
 
-function HomePage() {
+function CatalogPage() {
   return (
-    <main>
-      <Catalog/>
-    </main>
-  );
+    <div>
+        <Catalog/>
+        <Modal/>
+    </div>
+  )
 }
 
-export default HomePage;
+export default CatalogPage
