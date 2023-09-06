@@ -27,6 +27,8 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import FurnitureCatalog from "./components/FurnitureCatalog/FurnitureCatalog";
 import InteriorItems from "./components/InteriorItems/InteriorItems";
 import Beds from "./components/Catalog/Beds/Beds";
+import Armchairs from "./components/Catalog/Armchairs/Armchairs";
+
 const App: React.FC = () => {
   return (
     <div className="App">
@@ -51,6 +53,7 @@ const App: React.FC = () => {
         <Route path="/furniture" element={<FurnitureCatalog />} />
         <Route path="/interior" element={<InteriorItems />} />
         <Route path="/beds" element={<Beds />} />
+        <Route path="/armchairs" element={<Armchairs />} />
       </Routes>
       <Footer />
     </div>

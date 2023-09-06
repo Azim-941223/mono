@@ -1,0 +1,50 @@
+{
+  "udine_armchair": {
+    "description": "Udine armchair"
+  },
+  "twen_armchair": {
+    "description": "Twen armchair"
+  },
+  "stone_armchair": {
+    "description": "Stone armchair"
+  },
+  "lind_armchair": {
+    "description": "Lind armchair"
+  },
+  "boston_armchair": {
+    "description": "Boston armchair"
+  },
+  "xo_armchair": {
+    "description": "Xo armchair"
+  },
+  "vivo_armchair": {
+    "description": "Vivo armchair"
+  },
+  "grizzly_armchair": {
+    "description": "Grizzly armchair"
+  },
+  "belva_armchair": {
+    "description": "Belva armchair"
+  },
+  "puff_armchair": {
+    "description": "PUFF Chair armchair"
+  },
+  "piore_armchair": {
+    "description": "Piore armchair"
+  },
+  "rico_sofa": {
+    "description": "Rico sofa"
+  },
+  "modular_sofa": {
+    "description": "Modular sofa"
+  },
+  "chill_sofa": {
+    "description": "Chill sofa"
+  },
+  "shik_sofa": {
+    "description": "Shik sofa"
+  },
+  "moss_sofa": {
+    "description": "Moss sofa"
+  }
+}

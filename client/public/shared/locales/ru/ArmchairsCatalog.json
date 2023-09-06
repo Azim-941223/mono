@@ -1,0 +1,50 @@
+{
+  "udine_armchair": {
+    "description": "Кресло Udine"
+  },
+  "twen_armchair": {
+    "description": "Кресло ТВЕН"
+  },
+  "stone_armchair": {
+    "description": "Кресло Стоун"
+  },
+  "lind_armchair": {
+    "description": "Кресло Lind"
+  },
+  "boston_armchair": {
+    "description": "Кресло Boston"
+  },
+  "xo_armchair": {
+    "description": "Кресло Хо"
+  },
+  "vivo_armchair": {
+    "description": "Кресло Vivo"
+  },
+  "grizzly_armchair": {
+    "description": "Кресло Grizzly"
+  },
+  "belva_armchair": {
+    "description": "Кресло Belva"
+  },
+  "puff_armchair": {
+    "description": "Кресло PUFF Chair"
+  },
+  "piore_armchair": {
+    "description": "Кресло Piore"
+  },
+  "rico_sofa": {
+    "description": "Диван Rico"
+  },
+  "modular_sofa": {
+    "description": "Модульный диван"
+  },
+  "chill_sofa": {
+    "description": "Диван ЧИЛЛ"
+  },
+  "shik_sofa": {
+    "description": "Диван ШИК"
+  },
+  "moss_sofa": {
+    "description": "Диван Moss"
+  }
+}
