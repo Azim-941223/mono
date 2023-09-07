@@ -1,13 +1,13 @@
-import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import css from "./SliderFurniture.scss";
 import bos1 from "../../assets/images/ChairBoston/Boston2.png";
 import bos2 from "../../assets/images/ChairBoston/Boston3.png";
 import bos3 from "../../assets/images/ChairBoston/Boston4.png";
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 function SliderFurniture() {
   return (
@@ -33,8 +33,8 @@ function SliderFurniture() {
     </SwiperSlide>
     ...
   </Swiper>
-  )
-}
+  );
+};
 
-export default SliderFurniture
+export default SliderFurniture;
 

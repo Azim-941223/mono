@@ -36,9 +36,6 @@ const navLinks: navLink[] = [
   
 ];
 
-
-
-
 const userFunctional: functional[] = [
   {
     src: searchIcon,

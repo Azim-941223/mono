@@ -1,14 +1,15 @@
-import React from 'react'
+import React from "react";
 import css from "./PaymentMethod.scss";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 
 function PaymentMethod() {
   const { t } = useTranslation("PaymentMethod");
-
   return (
-    <div className="payment__catalog">
+    <div className="catalog">
+
+<div className="payment__catalog">
       <p  className={css.proba}></p>
       <p className="payment__title1">{t("payment")}</p>
 
@@ -68,8 +69,12 @@ function PaymentMethod() {
           {t("text6")}  <br/>
           {t("text7")} 
           </p>
-    </div>
-  )
-}
+    </div>  
 
-export default PaymentMethod
+
+    </div>
+   
+  );
+};
+
+export default PaymentMethod;

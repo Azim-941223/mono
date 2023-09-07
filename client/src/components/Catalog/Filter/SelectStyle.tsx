@@ -1,16 +1,13 @@
-import * as React from 'react';
-import OutlinedInput from '@mui/material/OutlinedInput';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import ListItemText from '@mui/material/ListItemText';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
-import Checkbox from '@mui/material/Checkbox';
+import * as React from "react";
+import OutlinedInput from "@mui/material/OutlinedInput";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import ListItemText from "@mui/material/ListItemText";
+import Select, { SelectChangeEvent } from "@mui/material/Select";
+import Checkbox from "@mui/material/Checkbox";
 import { useTranslation } from "react-i18next";
 import css from "./Select.modules.scss";
-
-
-
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
 const MenuProps = {
@@ -23,16 +20,14 @@ const MenuProps = {
 };
 
 const names = [
-  'Восточный',
-  'Минимализм',
-  'Конструктивизм',
-  'Тапиола Веркала'
+  "Восточный",
+  "Минимализм",
+  "Конструктивизм",
+  "Тапиола Веркала"
 ];
 
  function SelectStyle() {
     const { t } = useTranslation("AcessoiresFilter");
-
-
   const [style, setPersonName] = React.useState<string[]>([]);
 
   const handleChange = (event: SelectChangeEvent<typeof style>) => {
@@ -41,7 +36,7 @@ const names = [
     } = event;
     setPersonName(
       // On autofill we get a stringified value.
-      typeof value === 'string' ? value.split(',') : value,
+      typeof value === "string" ? value.split(",") : value,
     );
   };
 
@@ -56,7 +51,7 @@ const names = [
           value={style}
           onChange={handleChange}
           input={<OutlinedInput label="Стиль"/>}
-          renderValue={(selected) => selected.join(', ')}
+          renderValue={(selected) => selected.join(", ")}
           MenuProps={MenuProps}
         >
           {names.map((name) => (
@@ -71,4 +66,4 @@ const names = [
   );
 }
 
-export default SelectStyle
+export default SelectStyle;

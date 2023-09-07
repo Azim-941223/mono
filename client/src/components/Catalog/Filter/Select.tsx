@@ -1,16 +1,13 @@
-import * as React from 'react';
-import OutlinedInput from '@mui/material/OutlinedInput';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import ListItemText from '@mui/material/ListItemText';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
-import Checkbox from '@mui/material/Checkbox';
+import * as React from "react";
+import OutlinedInput from "@mui/material/OutlinedInput";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import ListItemText from "@mui/material/ListItemText";
+import Select, { SelectChangeEvent } from "@mui/material/Select";
+import Checkbox from "@mui/material/Checkbox";
 import { useTranslation } from "react-i18next";
 import css from "./Select.modules.scss";
-
-
-
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
 const MenuProps = {
@@ -23,12 +20,12 @@ const MenuProps = {
 };
 
 const names = [
-  'Настенные декорации',
-  'Зеркала',
-  'Шторы',
-  'Полки',
-  'Картины',
-  'Вазы/цветочные горшки'
+  "Настенные декорации",
+  "Зеркала",
+  "Шторы",
+  "Полки",
+  "Картины",
+  "Вазы/цветочные горшки"
 ];
 
 export default function MultipleSelectCheckmarks() {
@@ -42,7 +39,7 @@ export default function MultipleSelectCheckmarks() {
     } = event;
     setPersonName(
       // On autofill we get a stringified value.
-      typeof value === 'string' ? value.split(',') : value,
+      typeof value === "string" ? value.split(" ,") : value,
     );
   };
 
@@ -57,7 +54,7 @@ export default function MultipleSelectCheckmarks() {
           value={categories}
           onChange={handleChange}
           input={<OutlinedInput label={t("categor")}/>}
-          renderValue={(selected) => selected.join(', ')}
+          renderValue={(selected) => selected.join(", ")}
           MenuProps={MenuProps}
         >
           {names.map((name) => (

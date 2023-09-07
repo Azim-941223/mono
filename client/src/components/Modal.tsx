@@ -4,10 +4,10 @@ import mod from "../assets/images/Modal/Modal.png";
 import { useTranslation } from "react-i18next";
 export default function Modal(){
     const { t } = useTranslation("Modal");
-    const [modal, setModal] = useState(false)
+    const [modal, setModal] = useState(false);
     const toggleModal = () =>{
-        setModal(!modal)
-    }
+        setModal(!modal);
+    };
     return(
         <>
 <div className="modal1">
@@ -57,12 +57,6 @@ export default function Modal(){
 
         </div>
         )}
-
-
-
-
-
-
         </>
-    )
-}
+    );
+};

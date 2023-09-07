@@ -8,16 +8,13 @@
         border: none;
     }
     &__right{
-        padding: 55px 15px 0;
+        padding-top: 55px;
     }    
     &__righttitle{
         color: #292F36;
         margin-bottom: 50px;
     }
     &__container{
-    width: 100%;
-    max-width: 1380px;
-    margin: 0 auto;
     height: 820px ;
     display: flex;
     gap: 30px;

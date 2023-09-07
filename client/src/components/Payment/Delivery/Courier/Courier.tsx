@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import css from "./Courier.scss";
 import { useTranslation } from "react-i18next";
 function Courier() {
@@ -20,6 +20,6 @@ function Courier() {
 {t("textt2")}</p>
 </div>     
     </div>
-  )
-}
-export default Courier
+  );
+};
+export default Courier;
