@@ -23,7 +23,6 @@ import Contacts from "./components/Contacts/Contacts";
 import Catalog from "./components/Catalog/Catalog";
 import CatalogPage from "./pages/CatalogPage";
 import Payment from "./components/Payment/Payment";
-import AboutUs from "./components/AboutUs/AboutUs";
 import FurnitureCatalog from "./components/FurnitureCatalog/FurnitureCatalog";
 import InteriorItems from "./components/InteriorItems/InteriorItems";
 import Beds from "./components/Catalog/Beds/Beds";
@@ -46,8 +45,6 @@ const App: React.FC = () => {
         <Route path="/outside" element={<Outside/>}/>
         <Route path="/technic" element={<Technic/>}/>
         <Route path="/payment" element={<Payment/>}/>
-        <Route path="/about-us" element={<AboutUs/>}/>
-      </Routes>
         <Route path="/furniture" element={<FurnitureCatalog />} />
         <Route path="/interior" element={<InteriorItems />} />
         <Route path="/beds" element={<Beds />} />

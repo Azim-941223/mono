@@ -1,5 +1,5 @@
-import React from "react"
-import Catalog from "../Catalog/Catalog"
+import React from "react";
+import Catalog from "../Catalog/Catalog";
 import css from "./Furniture.module.scss";
 import bos from "../../assets/images/ChairBoston/Boston1.png";
 import { useTranslation } from "react-i18next";
@@ -90,6 +90,6 @@ function Furniture() {
       </div>
     </div>
     </div>
-  )
+  );
 }
 export default Furniture;

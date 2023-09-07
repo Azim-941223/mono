@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import css from "./Pointofissue.scss";
 import { useTranslation } from "react-i18next";
 function Pointofissue() {
@@ -24,7 +24,7 @@ function Pointofissue() {
 {t("textt2")}</p>
         </div>
     </div>
-  )
-}
+  );
+};
 
-export default Pointofissue
+export default Pointofissue;

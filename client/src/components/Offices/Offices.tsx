@@ -1,5 +1,5 @@
-import React from 'react'
-import Catalog from '../Catalog/Catalog'
+import React from "react";
+import Catalog from "../Catalog/Catalog";
 
 function Offices() {
   return (
@@ -7,7 +7,7 @@ function Offices() {
             <Catalog/>
       <h1>Offices</h1>
     </div>
-  )
-}
+  );
+};
 
-export default Offices
+export default Offices;

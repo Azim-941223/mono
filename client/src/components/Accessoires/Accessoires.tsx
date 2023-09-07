@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import css from "./Accessoires.module.scss";
 import access1 from "../../assets/images/Accessoires/access1.png";
 import access2 from "../../assets/images/Accessoires/access2.png";
@@ -17,12 +17,14 @@ import access14 from "../../assets/images/Accessoires/access14.png";
 import access15 from "../../assets/images/Accessoires/access15.png";
 import access16 from "../../assets/images/Accessoires/access16.png";
 import { useTranslation } from "react-i18next";
-import MultipleSelectCheckmarks from '../Catalog/Filter/Select';
-import SelectStyle from '../Catalog/Filter/SelectStyle';
+import MultipleSelectCheckmarks from "../Catalog/Filter/Select";
+import SelectStyle from "../Catalog/Filter/SelectStyle";
+import Catalog from "../Catalog/Catalog";
 function Accessoires() {
   const { t } = useTranslation("Accessoires");
   return (
     <div>
+      <Catalog/>
     <section className={css.accessoires__container}>
       <div className={css.accessoires__uptitle}>
         <div className={css.accessoires__uptitlecard1}>
@@ -156,6 +158,6 @@ function Accessoires() {
 </div>
    </section>
     </div>
-  )
+  );
 }
-export default Accessoires
+export default Accessoires;

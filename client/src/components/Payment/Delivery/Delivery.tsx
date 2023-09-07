@@ -1,11 +1,11 @@
 import Courier from "./Courier/Courier";
 import css from "./Delivery.scss";
-import React,{useState} from 'react'
+import React,{useState} from "react";
 import Pointofissue from "./Pointofissue/Pointofissue";
 import { useTranslation } from "react-i18next";
 function Delivery() {
   const { t } = useTranslation("PaymentMethod");
-  const [status, setStatus] = useState('signIn')
+  const [status, setStatus] = useState("signIn");
   return (
     <div className={css.proba}>
       <div className="delivery__catalog">
@@ -39,16 +39,16 @@ function Delivery() {
         </div>
         <p className="delivery__catalog-text">{t("shipping")}</p>
         <div className="delivery__row2">
-        <p onClick={()=> setStatus('signIn')} className={`delivery__title ${status === 'signIn' && 'delivery__title_active'}`}>{t("courier")}</p>
-        <p onClick={()=> setStatus('signUp')} className={`delivery__title ${status === 'signUp' && 'delivery__title_active'}`}>{t("point")}</p>
+        <p onClick={()=> setStatus("signIn")} className={`delivery__title ${status === "signIn" && "delivery__title_active"}`}>{t("courier")}</p>
+        <p onClick={()=> setStatus("signUp")} className={`delivery__title ${status === "signUp" && "delivery__title_active"}`}>{t("point")}</p>
         </div>
         {
-    status === 'signUp'  
+    status === "signUp"  
 }
-<button type='button'>{status === 'signIn' ? <Courier/> : <Pointofissue/>}</button>
+<button type='button'>{status === "signIn" ? <Courier/> : <Pointofissue/>}</button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Delivery
+export default Delivery;

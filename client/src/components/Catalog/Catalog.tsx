@@ -23,7 +23,7 @@ const { t } = useTranslation("Catalog");
   return (
     <div className="catalog__container">
         <div className="Catalog__search">
-        <Link className="catalog_title" to={`/catalog`}> <h1>{t("title")}</h1></Link>
+        <Link className="catalog_title" to={"/catalog"}> <h1>{t("title")}</h1></Link>
            <form className="form" action="">
             <input className="form__field" type="search" placeholder={t("search")}></input>
             <button className="button button_form" type="submit">
@@ -40,52 +40,52 @@ const { t } = useTranslation("Catalog");
             <div className="catalog__cards">
                <img  className="image" src={image1} alt="image"/>
                <br/>
-               <Link className="catalog__text"  to={`/accessoires`}>{t("accessoires")}</Link>
+               <Link className="catalog__text"  to={"/accessoires"}>{t("accessoires")}</Link>
             </div>
             <div className="catalog__cards">
               <img  className="image" src={image2} alt="image" />
               <br/>
-              <Link  className="catalog__text" to={`/childroom`}>{t("child")}</Link>
+              <Link  className="catalog__text" to={"/childroom"}>{t("child")}</Link>
             </div>
             <div className="catalog__cards">
             <img  className="image" src={image3} alt="image" />
             <br/>
-            <Link  className="catalog__text" to={`/furniture`}>{t("furniture")}</Link>
+            <Link  className="catalog__text" to={"/furniture"}>{t("furniture")}</Link>
             </div>
             <div className="catalog__cards">
             <img  className="image" src={image4} alt="image" />
             <br/>
-            <Link  className="catalog__text" to={`/sofas`}>{t("sofas")}</Link>
+            <Link  className="catalog__text" to={"/sofas"}>{t("sofas")}</Link>
             </div>
             <div className="catalog__cards">
             <img  className="image" src={image5} alt="image" />
             <br/>
-            <Link  className="catalog__text" to={`/offices`}>{t("office")}</Link>
+            <Link  className="catalog__text" to={"/offices"}>{t("office")}</Link>
             </div>
             <div className="catalog__cards">
             <img  className="image" src={image6} alt="image" />
             <br/>
-            <Link  className="catalog__text" to={`/plumbing`}>{t("plumbing")}</Link>
+            <Link  className="catalog__text" to={"/plumbing"}>{t("plumbing")}</Link>
             </div>
             <div className="catalog__cards">
             <img  className="image" src={image7} alt="image" />
             <br/>
-            <Link  className="catalog__text" to={`/lightning`}>{t("light")}</Link>
+            <Link  className="catalog__text" to={"/lightning"}>{t("light")}</Link>
             </div>
             <div className="catalog__cards">
             <img  className="image" src={image8} alt="image" />
             <br/>
-            <Link  className="catalog__text" to={`/outside`}>{t("out")}</Link>
+            <Link  className="catalog__text" to={"/outside"}>{t("out")}</Link>
             </div>
             <div className="catalog__cards">
             <img  className="image" src={image9} alt="image" />
             <br/>
-            <Link  className="catalog__text" to={`/technic`}>{t("tech")}</Link>
+            <Link  className="catalog__text" to={"/technic"}>{t("tech")}</Link>
             </div>
             <div className="catalog__cards">
             <img  className="image" src={image10} alt="image" />
             <br/>
-            <Link  className="catalog__text" to={`/kitchen`}>{t("kitchen")}</Link>
+            <Link  className="catalog__text" to={"/kitchen"}>{t("kitchen")}</Link>
             </div>
 <span className="catalog_line">
 <svg   width="1257" height="1" viewBox="0 0 1277 1" fill="none" xmlns="http://www.w3.org/2000/svg">
