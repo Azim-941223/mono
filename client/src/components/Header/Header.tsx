@@ -33,6 +33,7 @@ const navLinks: navLink[] = [
     name: "payment",
     to: "/payment",
   },
+ 
   
 ];
 
