@@ -1,14 +1,12 @@
 import React from "react";
-import Catalog from "../Catalog/Catalog";
-import css from "./Furniture.module.scss";
+import css from "./Bostonchair.modules.scss";
 import bos from "../../assets/images/ChairBoston/Boston1.png";
 import { useTranslation } from "react-i18next";
 import SliderFurniture from "../SliderFurniture/SliderFurniture";
-function Furniture() {
+function BostonChair() {
   const { t } = useTranslation("ChairBoston");
   return (
     <div>
-      <Catalog/>
       <div className={css.ShouldChange}>
       <div className={css.ChairBostonContainer}>
         <div className={css.ChairBoston}>
@@ -92,4 +90,4 @@ function Furniture() {
     </div>
   );
 }
-export default Furniture;
+export default BostonChair;
