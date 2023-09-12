@@ -1,13 +1,13 @@
-import React from 'react'
-import Catalog from '../Catalog/Catalog'
+import React from "react";
+import Catalog from "../Catalog/Catalog";
 
 function Technic() {
   return (
     <div>
-      <Catalog/>
+      <Catalog />
       <h1>Technic</h1>
     </div>
-  )
+  );
 }
 
-export default Technic
+export default Technic;

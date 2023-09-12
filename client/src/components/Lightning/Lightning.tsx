@@ -1,13 +1,13 @@
-import React from 'react'
-import Catalog from '../Catalog/Catalog'
+import React from "react";
+import Catalog from "../Catalog/Catalog";
 
 function Lightning() {
   return (
     <div>
-      <Catalog/>
+      <Catalog />
       <h1>Lightning</h1>
     </div>
-  )
+  );
 }
 
-export default Lightning
+export default Lightning;

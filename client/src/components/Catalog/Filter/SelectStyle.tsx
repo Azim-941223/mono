@@ -1,15 +1,13 @@
-import * as React from 'react';
-import OutlinedInput from '@mui/material/OutlinedInput';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import ListItemText from '@mui/material/ListItemText';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
-import Checkbox from '@mui/material/Checkbox';
+import * as React from "react";
+import OutlinedInput from "@mui/material/OutlinedInput";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import ListItemText from "@mui/material/ListItemText";
+import Select, { SelectChangeEvent } from "@mui/material/Select";
+import Checkbox from "@mui/material/Checkbox";
 import { useTranslation } from "react-i18next";
 import css from "./Select.modules.scss";
-
-
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -22,16 +20,10 @@ const MenuProps = {
   },
 };
 
-const names = [
-  'Восточный',
-  'Минимализм',
-  'Конструктивизм',
-  'Тапиола Веркала'
-];
+const names = ["Восточный", "Минимализм", "Конструктивизм", "Тапиола Веркала"];
 
- function SelectStyle() {
-    const { t } = useTranslation("AcessoiresFilter");
-
+function SelectStyle() {
+  const { t } = useTranslation("AcessoiresFilter");
 
   const [style, setPersonName] = React.useState<string[]>([]);
 
@@ -41,7 +33,7 @@ const names = [
     } = event;
     setPersonName(
       // On autofill we get a stringified value.
-      typeof value === 'string' ? value.split(',') : value,
+      typeof value === "string" ? value.split(",") : value
     );
   };
 
@@ -49,18 +41,19 @@ const names = [
     <div className="selectstyle">
       <FormControl sx={{ m: 1, width: 300 }}>
         <InputLabel id="demo-multiple-checkbox-label">Стиль</InputLabel>
-        <Select className={css.proba}
+        <Select
+          className={css.proba}
           labelId="demo-multiple-checkbox-label"
           id="demo-multiple-checkbox"
           multiple
           value={style}
           onChange={handleChange}
-          input={<OutlinedInput label="Стиль"/>}
-          renderValue={(selected) => selected.join(', ')}
+          input={<OutlinedInput label="Стиль" />}
+          renderValue={(selected) => selected.join(", ")}
           MenuProps={MenuProps}
         >
           {names.map((name) => (
-            <MenuItem key={name} value={name} >
+            <MenuItem key={name} value={name}>
               <Checkbox checked={style.indexOf(name) > -1} />
               <ListItemText primary={name} />
             </MenuItem>
@@ -71,4 +64,4 @@ const names = [
   );
 }
 
-export default SelectStyle
+export default SelectStyle;

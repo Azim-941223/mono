@@ -1,14 +1,14 @@
-import React from 'react'
-import Catalog from '../Catalog/Catalog'
+import React from "react";
+import Catalog from "../Catalog/Catalog";
 
 function Plumbing() {
   return (
     <div>
-            <Catalog/>
+      <Catalog />
 
       <h1>Plumbing</h1>
     </div>
-  )
+  );
 }
 
-export default Plumbing
+export default Plumbing;

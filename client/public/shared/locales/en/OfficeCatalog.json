@@ -1,0 +1,20 @@
+{
+  "roll_armchair": {
+    "description": "Roll armchair"
+  },
+  "attica_desk": {
+    "description": "Attica desk"
+  },
+  "lover_armchair": {
+    "description": "Lover armchair"
+  },
+  "prost_shelf": {
+    "description": "PROST shelf"
+  },
+  "rto_desk": {
+    "description": "RTO7 desk"
+  },
+  "fjord_armchair": {
+    "description": "Fjord armchair"
+  }
+}

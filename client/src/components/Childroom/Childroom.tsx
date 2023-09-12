@@ -1,12 +1,11 @@
-import React from "react"
-import Catalog from "../Catalog/Catalog"
+import React from "react";
+import Catalog from "../Catalog/Catalog";
 
 function Childroom() {
   return (
     <div>
-      <Catalog/>
+      <Catalog />
       <h1>Childroom</h1>
-      
     </div>
   );
 }

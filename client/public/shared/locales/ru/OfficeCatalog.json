@@ -1,0 +1,20 @@
+{
+  "roll_armchair": {
+    "description": "Кресло Roll"
+  },
+  "attica_desk": {
+    "description": "Стол письменный Attica"
+  },
+  "lover_armchair": {
+    "description": "Кресло Lover"
+  },
+  "prost_shelf": {
+    "description": "Стеллаж ПРОСТ"
+  },
+  "rto_desk": {
+    "description": "Письменный стол RTO7"
+  },
+  "fjord_armchair": {
+    "description": "Кресло Fjord"
+  }
+}
