@@ -1,0 +1,134 @@
+.ChairBostonContainer{
+    width: 100%;
+    max-width: 1380px;
+    margin: 0 auto;
+    height: 800px ;
+    padding-top: 5px ;
+}
+
+.ChairBoston{
+    display: flex;
+    gap: 40px;
+}
+
+.Right__image{
+    width: 514px;
+    &_bottom{
+        margin-top: 7px;
+    }
+}
+
+.Left__colours{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+
+.Left__basket{
+    margin-top: 8px;
+    margin-left: 4px;
+    &_text{
+        padding-top: 10px;
+        padding-left: 23px;
+    }
+}
+
+.Left__colour{
+    cursor: pointer;
+    opacity: 1;
+  transform: scale(1, 1);
+  transition-duration: 1.5s;
+  &:active{
+        transform: scale(1.2, 1.2);
+        outline: none;
+        transition-duration: 50ms;
+
+  }
+}
+
+.Left__button{
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+
+}
+
+.Left__btn{
+    color: aliceblue;
+    background-color: #9D8053;
+    width: 143px;
+    height: 40px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    padding-bottom: 7px;
+    display: flex;
+    gap: 4px;
+
+}
+
+
+.Left_subtitle{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+.characterst__name1{
+    color: #666666;
+    padding-top: 35px;
+    padding-bottom: 8px;
+}
+
+
+
+.characterst__name2{
+    color: #666666;
+    margin-top: 30px;
+    margin-bottom: 18px;
+ 
+}
+
+
+.characterst__name{
+    color: #666666;
+
+}
+
+.characterist{
+    display: flex;
+    gap: 37px;
+    margin-bottom: 10px;
+}
+
+.characterist1{
+    display: flex;
+    gap: 36px;
+    margin-bottom: 10px;
+
+}
+
+.characterist2{
+    display: flex;
+    gap: 35px;
+    margin-bottom: 10px;
+
+}
+
+.char__title{
+    display: flex;
+    gap: 15px;
+}
+
+.char__title1{
+    display: flex;
+    gap: 10px;
+}
+
+.char__title2{
+    display: flex;
+    gap: 5px;
+}
+
+

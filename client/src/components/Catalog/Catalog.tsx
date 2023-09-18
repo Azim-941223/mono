@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import css from "./Catalog.scss";
 import image1 from "../../assets/images/Catalog/frame1.png";
 import image2 from "../../assets/images/Catalog/frame2.png";
@@ -11,14 +12,18 @@ import image8 from "../../assets/images/Catalog/frame8.png";
 import image9 from "../../assets/images/Catalog/frame9.png";
 import image10 from "../../assets/images/Catalog/frame10.png";
 import { useTranslation } from "react-i18next";
+
 function Catalog() {
-    const { t } = useTranslation("Catalog");
+//const navigate = useNavigate();
+//const navigateToPage=()=>{
+//  navigate('/accessoires')
+//}
+const { t } = useTranslation("Catalog");
+
   return (
     <div className="catalog__container">
-
         <div className="Catalog__search">
-           <h1>{t("title")}</h1>
-
+        <Link className="catalog_title" to={"/catalog"}> <h1>{t("title")}</h1></Link>
            <form className="form" action="">
             <input className="form__field" type="search" placeholder={t("search")}></input>
             <button className="button button_form" type="submit">
@@ -33,52 +38,61 @@ function Catalog() {
           </div>
           <div className="catalog2">
             <div className="catalog__cards">
-               <img  className="image" src={image1} alt="image" />
-               <p className="catalog__text">{t("accessoires")}</p>
+               <img  className="image" src={image1} alt="image"/>
+               <br/>
+               <Link className="catalog__text"  to={"/accessoires"}>{t("accessoires")}</Link>
             </div>
             <div className="catalog__cards">
               <img  className="image" src={image2} alt="image" />
-              <p className="catalog__text">{t("child")}</p>
+              <br/>
+              <Link  className="catalog__text" to={"/childroom"}>{t("child")}</Link>
             </div>
             <div className="catalog__cards">
             <img  className="image" src={image3} alt="image" />
-            <p className="catalog__text">{t("furniture")}</p>
+            <br/>
+            <Link  className="catalog__text" to={"/furniture"}>{t("furniture")}</Link>
             </div>
             <div className="catalog__cards">
             <img  className="image" src={image4} alt="image" />
-            <p className="catalog__text">{t("sofas")}</p>
+            <br/>
+            <Link  className="catalog__text" to={"/sofas"}>{t("sofas")}</Link>
             </div>
             <div className="catalog__cards">
             <img  className="image" src={image5} alt="image" />
-            <p className="catalog__text">{t("office")}</p>
+            <br/>
+            <Link  className="catalog__text" to={"/offices"}>{t("office")}</Link>
             </div>
             <div className="catalog__cards">
             <img  className="image" src={image6} alt="image" />
-            <p className="catalog__text">{t("plumbing")}</p>
+            <br/>
+            <Link  className="catalog__text" to={"/plumbing"}>{t("plumbing")}</Link>
             </div>
             <div className="catalog__cards">
             <img  className="image" src={image7} alt="image" />
-            <p className="catalog__text">{t("light")}</p>
+            <br/>
+            <Link  className="catalog__text" to={"/lightning"}>{t("light")}</Link>
             </div>
             <div className="catalog__cards">
             <img  className="image" src={image8} alt="image" />
-            <p className="catalog__text">{t("out")}</p>
+            <br/>
+            <Link  className="catalog__text" to={"/outside"}>{t("out")}</Link>
             </div>
             <div className="catalog__cards">
             <img  className="image" src={image9} alt="image" />
-            <p className="catalog__text">{t("tech")}</p>
+            <br/>
+            <Link  className="catalog__text" to={"/technic"}>{t("tech")}</Link>
             </div>
-
             <div className="catalog__cards">
             <img  className="image" src={image10} alt="image" />
-            <p className="catalog__text">{t("kitchen")}</p>
+            <br/>
+            <Link  className="catalog__text" to={"/kitchen"}>{t("kitchen")}</Link>
             </div>
 <span className="catalog_line">
 <svg   width="1257" height="1" viewBox="0 0 1277 1" fill="none" xmlns="http://www.w3.org/2000/svg">
 <line x1="-4.37114e-08" y1="0.5" x2="1277" y2="0.499888" stroke="black"/>
 </svg>
 </span>
-          </div>
+          </div>   
 </div>
     </div>
   );

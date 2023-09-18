@@ -1,0 +1,162 @@
+body.active-modal{
+    overflow-y: hidden;
+}
+btn-modal{
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal, .overlay{
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+
+}
+
+.overlay{
+    background: rgba(49,49,49,0.8);
+}
+
+.modal-content{
+    position: absolute;
+    top: 40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background:  #333333;
+    padding: 25px 28px;
+    border-radius: 8px;
+    width: 700px;
+    height: 300px;
+  
+}
+
+.modal{
+   &-symbol{
+    margin-right: 4px;
+   }
+    &__title{
+        padding-top: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    &__text{
+        color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
+.close-modal{
+     cursor: pointer;
+     background-color: #333333;
+    border: 2px solid white;
+    color:azure;
+    border-radius: 200px;
+    position: fixed;
+    top: 15px;
+    right: calc(25% - 160px);
+    width: 23px;
+    height: 22px;
+
+}
+
+
+.forms__field{
+    width: 500px;
+    height: 50px;
+    background-color: #D0CFCC;
+    border-radius: 6px;
+}
+
+.forms__field-1{
+    width: 500px;
+    height: 100px;
+    background-color: #D0CFCC;
+    border-radius: 6px;
+    border: none;
+    padding-bottom: 50px;
+}
+
+
+.forms__field-2{
+    width: 500px;
+    height: 80px;
+    background-color: #D0CFCC;
+    border-radius: 6px;
+    border: none;
+    padding-bottom: 45px;
+}
+
+
+
+.forms__field:invalid{
+    border: 2px solid red;
+    color: red($color: red);
+    margin-bottom: 7px;
+}
+
+.forms__field:valid{
+    border: none;
+    width: 500px;
+    height: 50px;
+}
+
+.modal1{
+    display: flex;
+    gap: 10px;
+    height: 600px;
+    padding-top: 40px;
+
+}
+
+
+.modal__left{
+padding-left: 20px;
+&-text{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+}
+
+.modal__right{
+    &-img{
+        width: 700px;
+        height: 500px;
+    }
+}
+
+.form__btn{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #9D8053;
+    cursor: pointer;
+    color: white;
+}
+
+.forms__text{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 20px;
+}
+
+.form-1{
+    padding-top: 10px;
+    padding-bottom: -10px;
+}
+
+.close-modal{
+    border-radius: 9px;
+    text-decoration: line;
+}

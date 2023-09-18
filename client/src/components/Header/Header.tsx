@@ -33,6 +33,8 @@ const navLinks: navLink[] = [
     name: "payment",
     to: "/payment",
   },
+ 
+  
 ];
 
 const userFunctional: functional[] = [
