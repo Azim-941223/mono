@@ -1,0 +1,41 @@
+{
+  "teo_chair": {
+    "description": "Teo chair"
+  },
+  "anderson_chair": {
+    "description": "Anderson chair"
+  },
+  "sok_chair": {
+    "description": "SOK semi-bar chair"
+  },
+  "bar_chair": {
+    "description": "Bar chair"
+  },
+  "norm_chair": {
+    "description": "Norm bar chair"
+  },
+  "piore_table": {
+    "description": "Piore table"
+  },
+  "ril_chair": {
+    "description": "Ril chair"
+  },
+  "black_dining_table": {
+    "description": "Dining table"
+  },
+  "brown_dining_table": {
+    "description": "Dining table"
+  },
+  "dante_nightstand": {
+    "description": "Dante nightstand"
+  },
+  "oxrand_table": {
+    "description": "Oxrand table"
+  },
+  "yanaha_armchair": {
+    "description": "Yanaha armchair"
+  },
+  "dining_table": {
+    "description": "Dining table"
+  }
+}

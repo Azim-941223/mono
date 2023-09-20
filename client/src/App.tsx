@@ -16,6 +16,7 @@ import CatalogPage from "./pages/CatalogPage";
 import Payment from "./components/Payment/Payment";
 import InteriorItems from "./components/InteriorItems/InteriorItems";
 import Beds from "./components/Catalog/Beds/Beds";
+import Chairs from "./components/Catalog/Chairs/Chairs";
 import Armchairs from "./components/Catalog/Armchairs/Armchairs";
 
 const App: React.FC = () => {
@@ -32,6 +33,7 @@ const App: React.FC = () => {
         <Route path="/payment" element={<Payment/>}/>
         <Route path="/interior" element={<InteriorItems />} />
         <Route path="/beds" element={<Beds />} />
+        <Route path="/chairs" element={<Chairs />} />
         <Route path="/armchairs" element={<Armchairs />} />
       </Routes>
       <Footer />

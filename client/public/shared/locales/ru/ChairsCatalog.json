@@ -1,0 +1,41 @@
+{
+  "teo_chair": {
+    "description": "Стул Teo"
+  },
+  "anderson_chair": {
+    "description": "Стул Anderson"
+  },
+  "sok_chair": {
+    "description": "Стул/полубарный/СОК"
+  },
+  "bar_chair": {
+    "description": "Барный стул"
+  },
+  "norm_chair": {
+    "description": "Барный стул НОРМ"
+  },
+  "piore_table": {
+    "description": "Стол Piore"
+  },
+  "ril_chair": {
+    "description": "Стул РИЛ"
+  },
+  "black_dining_table": {
+    "description": "Обеденный стол"
+  },
+  "brown_dining_table": {
+    "description": "Обеденный стол"
+  },
+  "dante_nightstand": {
+    "description": "Тумба Dante"
+  },
+  "oxrand_table": {
+    "description": "Столик Oxrand"
+  },
+  "yanaha_armchair": {
+    "description": "Кресло Yanaha"
+  },
+  "dining_table": {
+    "description": "Обеденный стол"
+  }
+}
