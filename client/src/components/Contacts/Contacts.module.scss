@@ -1,0 +1,52 @@
+.Contacts{
+    &__net{
+        cursor: pointer;
+    }
+    &__map{
+        margin-top: 40px;
+        border-radius: 20px;
+        border: none;
+    }
+    &__right{
+        padding-top: 55px;
+    }    
+    &__righttitle{
+        color: #292F36;
+        margin-bottom: 50px;
+    }
+    &__container{
+    height: 820px ;
+    display: flex;
+    gap: 30px;
+}
+&__listnetwork{
+    width: 400px;
+    height: 69px;
+    background-color: #414141;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+&__network{
+    display: flex;
+    gap:30px;
+    padding-top: 25px;
+    padding-left: 120px; 
+}
+&__image{
+    width: 760px;
+    height:820px;
+}
+&__address{
+    padding-left: 5px;
+    margin-top: 19px;
+}
+&__symbols{
+    display: flex;
+    gap: 14px;
+}
+&__line{
+    width: 320px;
+    margin-left: 70px;
+    margin-bottom: 15px;   
+}   
+}

@@ -1,12 +1,17 @@
 import React from "react";
+import Modal from "../components/Modal";
 import Catalog from "../components/Catalog/Catalog";
+import FurnitureCatalog from "../components/FurnitureCatalog/FurnitureCatalog";
+import InteriorItems from "../components/InteriorItems/InteriorItems";
 
-function HomePage() {
+function CatalogPage() {
   return (
-    <main>
-      <Catalog/>
-    </main>
+    <div>
+        <Catalog/>
+        <FurnitureCatalog/>
+        <Modal/>
+    </div>
   );
-}
+};
 
-export default HomePage;
+export default CatalogPage;

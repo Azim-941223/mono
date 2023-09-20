@@ -1,0 +1,42 @@
+
+.accessoires{
+    &__container{
+        width: 100%;
+        max-width: 1380px;
+        height: 2000px;
+        margin: 0 auto;
+        padding-left: 20px;
+    }
+    &__name{
+        color: black;
+        cursor: pointer;
+    }
+   
+    &__uptitle{
+        display: flex;
+        gap: 10px;
+        margin-bottom: -30px;
+        margin-top: -50px;
+       
+    }
+    &__card{
+        width: 303px;
+        height: 421px;
+        border: 1px solid black;
+    }
+    &__cardname{
+        padding-left: 30px;
+    }
+    &__cardprice{
+        padding-top: 4px;
+        font-weight:bold;
+    }
+    &__cardsrow{
+        display: block;
+    }
+    &__cards{
+        display: flex;
+        gap: 8px;
+        padding-top: 50px;
+    }
+}
