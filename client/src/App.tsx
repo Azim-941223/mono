@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.scss";
 import "./i18next";
-import SliderComponent from "./components/slider/SliderComponent";
 //const App: React.FC = () => {
 //  return (
 //    <div className="App">
@@ -36,20 +35,20 @@ const App: React.FC = () => {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/catalogpage" element={<Catalog/>} />
-        <Route path="/catalog" element={<CatalogPage/>} />
-        <Route path="/contact" element={<Contacts/>} />
-        <Route path="/accessoires" element={<Accessoires/>} />
-        <Route path="/childroom" element={<Childroom/>} />
-        <Route path="/furniture" element={<Furniture/>} />
-        <Route path="/sofas" element={<Sofas/>} />
-        <Route path="/offices" element={<Offices/>}/>
-        <Route path="/plumbing" element={<Plumbing/>}/>
-        <Route path="/lightning" element={<Lightning/>}/>
-        <Route path="/outside" element={<Outside/>}/>
-        <Route path="/technic" element={<Technic/>}/>
-        <Route path="/payment" element={<Payment/>}/>
-        <Route path="/about-us" element={<AboutUs/>}/>
+        <Route path="/catalogpage" element={<Catalog />} />
+        <Route path="/catalog" element={<CatalogPage />} />
+        <Route path="/contact" element={<Contacts />} />
+        <Route path="/accessoires" element={<Accessoires />} />
+        <Route path="/childroom" element={<Childroom />} />
+        <Route path="/furniture" element={<Furniture />} />
+        <Route path="/sofas" element={<Sofas />} />
+        <Route path="/offices" element={<Offices />} />
+        <Route path="/plumbing" element={<Plumbing />} />
+        <Route path="/lightning" element={<Lightning />} />
+        <Route path="/outside" element={<Outside />} />
+        <Route path="/technic" element={<Technic />} />
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/about-us" element={<AboutUs />} />
         <Route path="/furniture" element={<FurnitureCatalog />} />
         <Route path="/interior" element={<InteriorItems />} />
         <Route path="/beds" element={<Beds />} />
