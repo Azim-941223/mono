@@ -7,7 +7,6 @@ import shelfProst from "../../../assets/images/OfficeCatalog/prost_shelf.png";
 import deskRTO from "../../../assets/images/OfficeCatalog/rto_desk.png";
 import armchairFjord from "../../../assets/images/OfficeCatalog/fjord_armchair.png";
 
-
 interface Product {
   id: number;
   imageUrl: string;
