@@ -1,0 +1,36 @@
+{
+  "anderson_chair": {
+    "title": "Anderson chair",
+    "material": "Materials: oak veneer",
+    "upholstery": "Upholstery: leather",
+    "mechanism": "Mechanism: chair"
+  },
+  "teo_chair": {
+    "title": "Teo chair"
+  },
+  "oxrand_table": {
+    "title": "Oxrand table"
+  },
+  "vivo_armchair": {
+    "title": "Vivo armchair"
+  },
+  "bunk_bed": {
+    "title": "Bunk bed"
+  },
+  "belva_armchair": {
+    "title": "Кресло BELVA"
+  },
+  "total": {
+    "amount": "Amount",
+    "products": "Products",
+    "your_products": "Your products",
+    "order": "Order"
+  },
+  "basket": {
+    "basket": "Basket",
+    "title": "Title",
+    "quantity": "Quantity",
+    "price": "Price",
+    "amount": "Amount"
+  }
+}

@@ -1,0 +1,125 @@
+.container {
+  width: 86%;
+  margin: 0 auto;
+}
+.basket {
+  width: 952px;
+  height: 15vh;
+  padding-top: 2%;
+  .basket_left_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #777;
+    margin-top: 1%;
+    .basket_left {
+      width: 49%;
+    }
+    .basket_right {
+      width: 50%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.global {
+  width: 952px;
+  height: 250px;
+  border-radius: 10px;
+  margin-bottom: 1%;
+  border: 1px solid #666666;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  img {
+    width: 150px;
+    height: 200px;
+    flex-shrink: 0;
+  }
+  .title {
+    width: 20%;
+    h3 {
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    .main_title {
+      height: 150px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      color: #555;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: capitalize;
+      img {
+        width: 111px;
+        height: 30px;
+      }
+    }
+  }
+  .minus_plus {
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 24px;
+    font-weight: 500;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  .price {
+    width: 20%;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.order {
+  width: 294px;
+  height: 270px;
+  background-color: #666;
+  border-radius: 10px;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .order_left {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15%;
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .order_right {
+    display: flex;
+    justify-content: center;
+
+    button {
+      background-color: #333333;
+      width: 153px;
+      height: 52px;
+      color: white;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
