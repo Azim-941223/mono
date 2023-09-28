@@ -1,0 +1,36 @@
+{
+  "anderson_chair": {
+    "title": "Стул Anderson",
+    "material": "Материалы: шпон дуба",
+    "upholstery": "Обивка: кожа",
+    "mechanism": "Механизм: стул"
+  },
+  "teo_chair": {
+    "title": "Стул Teo"
+  },
+  "oxrand_table": {
+    "title": "Столик Oxrand"
+  },
+  "vivo_armchair": {
+    "title": "Кресло Vivo"
+  },
+  "bunk_bed": {
+    "title": "Двухъярусная кровать"
+  },
+  "belva_armchair": {
+    "title": "Кресло BELVA"
+  },
+  "total": {
+    "amount": "Сумма",
+    "products": "Товары",
+    "your_products": "Ваши товары",
+    "order": "Заказать"
+  },
+  "basket": {
+    "basket": "Корзина",
+    "title": "Наименование",
+    "quantity": "Количество",
+    "price": "Цена",
+    "amount": "Сумма"
+  }
+}
