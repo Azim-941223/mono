@@ -1,0 +1,217 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+
+  input:focus {
+    outline: none;
+  }
+
+  .upper_div {
+    h1 {
+      margin: 1.5% 0 1.5% 0;
+    }
+    .terms_delivery {
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 1.5%;
+    }
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .confirm_btn {
+        background-color: #333333;
+        color: #ffffff;
+        border-radius: 5px;
+        width: 196px;
+        height: 52px;
+      }
+      label {
+        input {
+          border: 1px solid #666;
+          border-radius: 5px;
+          width: 240px;
+          height: 42px;
+          padding-left: 3%;
+          margin: 2% 0 5% 0;
+        }
+      }
+    }
+  }
+  .adress_map {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+    .adress {
+      label {
+        p {
+          color: #777;
+          font-family: Montserrat;
+          font-size: 16px;
+          font-weight: 500;
+        }
+        input {
+          height: 42px;
+          padding-left: 3%;
+          margin: 3% 0 3% 0;
+        }
+      }
+      p {
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .address_cost {
+        padding-top: 4%;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+    .map {
+      img {
+        width: 842px;
+        height: 270px;
+      }
+    }
+  }
+  .lower_div {
+    display: flex;
+
+    .payment_method {
+      width: 40%;
+      h2 {
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+      }
+      .frame {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 5%;
+
+        width: 296px;
+        border: 1px solid #f2f4f7;
+        border-radius: 8px;
+        background: #fff;
+        margin-top: 3%;
+      }
+      .lower_frame {
+        display: flex;
+        margin: 4% 0 4% 0;
+        flex-direction: column;
+        width: 296px;
+        height: 162px;
+        border-radius: 10px;
+        background: #666;
+        color: white;
+        div {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+        }
+      }
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .round_checkbox input[type="checkbox"] {
+          display: none;
+        }
+        /* Стилизация круглого чекбокса */
+        .round_checkbox .checkmark {
+          // position: relative;
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          border: 1px solid #98A2B3;
+          border-radius: 50%; /* Создаем круглую форму */
+          margin-right: 10px;
+        }
+        .round_checkbox input[type="checkbox"]:checked + .checkmark {
+          background-image: url(../../../assets/icons/radio.svg);
+          position: relative; ///ВЕРНУСЬ ОБРАТНО
+        }
+        /* При наведении курсора на круглый чекбокс */
+        .round_checkbox:hover input[type="checkbox"] + .checkmark {
+          background-color: #aaa; /* Измените цвет при наведении */
+          background-color: #0354A6;
+        }
+      }
+    }
+
+    .complete_payment {
+      width: 70%;
+      height: 53vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      .remember_card {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      .labels {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+      }
+      p {
+        color: #666;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .btns {
+        width: 47%;
+        display: flex;
+        justify-content: space-between;
+        button {
+          font-family: Montserrat;
+          font-size: 18px;
+          font-weight: 500;
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .pay_btn {
+          width: 224px;
+          height: 54px;
+          background: #9d8053;
+          color: #fff;
+        }
+        .cancel_btn {
+          width: 164px;
+          height: 52px;
+          border: 1px solid #666;
+          color: #666;
+        }
+      }
+
+      label {
+        p {
+          color: #666;
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+        }
+        input {
+          display: flex;
+          width: 340px;
+          padding: 10px;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

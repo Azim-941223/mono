@@ -18,6 +18,7 @@ import InteriorItems from "./components/InteriorItems/InteriorItems";
 import Beds from "./components/Catalog/Beds/Beds";
 import Chairs from "./components/Catalog/Chairs/Chairs";
 import Armchairs from "./components/Catalog/Armchairs/Armchairs";
+import Pay from "./components/Basket/Pay/Pay";
 
 const App: React.FC = () => {
   return (
@@ -25,16 +26,17 @@ const App: React.FC = () => {
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/catalogpage" element={<Catalog/>} />
-        <Route path="/catalog" element={<CatalogPage/>} />
-        <Route path="/contact" element={<Contacts/>} />
-        <Route path="/accessoires" element={<Accessoires/>} />
-        <Route path="/childroom" element={<Beds/>} />
-        <Route path="/payment" element={<Payment/>}/>
+        <Route path="/catalogpage" element={<Catalog />} />
+        <Route path="/catalog" element={<CatalogPage />} />
+        <Route path="/contact" element={<Contacts />} />
+        <Route path="/accessoires" element={<Accessoires />} />
+        <Route path="/childroom" element={<Beds />} />
+        <Route path="/payment" element={<Payment />} />
         <Route path="/interior" element={<InteriorItems />} />
         <Route path="/beds" element={<Beds />} />
         <Route path="/chairs" element={<Chairs />} />
         <Route path="/armchairs" element={<Armchairs />} />
+        <Route path="/pay" element={<Pay />} />
       </Routes>
       <Footer />
     </div>
