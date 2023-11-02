@@ -197,6 +197,7 @@ const Pay: React.FC = () => {
                 name="validityPeriod"
                 value={inputData.validityPeriod}
                 onChange={handleInputChange}
+                maxLength={5}
               />
             </label>
             <label>
